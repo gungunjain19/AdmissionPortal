@@ -14,7 +14,7 @@
         <div class="row mt-5">
             <div class="col-6 offset-3">
                 <h1 class="mb-4">Enter Your Details</h1>
-        <form action="/user/signup" method="POST" novalidate class="needs-validation">
+        <form action="/user/register" method="POST" novalidate class="needs-validation">
             <div class="mb-2">
                 <label for="fullName" class="form-label">FullName</label>
                 <input required type="text" id="fullName" name="fullName"  class="form-control">
@@ -36,8 +36,8 @@
                     <label for="qualification" class="form-label">Previous qualification</label>
                     <select class="form-select" name="qualification" >
                         <option value="10+2" selected>10+2</option>
-                        <option value="Bachelors">Undergraduate</option>
-                        <option value="Bachelors">Postgraduate</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Postgraduate">Postgraduate</option>
                       </select>
                 </div>
             </div>
@@ -45,10 +45,9 @@
             <label for="subject" class="form-label">Previous qualification degree</label>
             <select class="form-select" name="subject" >
                 <option selected>subject</option>
-                <option value="10+2">10+2 with PCM</option>
-                <option value="10+2">10+2 with PCB</option>
-                <option value="10+2">10+2 in other stream</option>
-                <option value="Bachelors">BE/Btech</option>
+                <option value="PCM">PCM</option>
+                <option value="PCB">PCB</option>
+                <option value="BEorBtech">BEorBtech</option>
                 <option value="10+2">Bachelor's in CS/IT</option>
                 <option value="Bachelors">Bachelor's in Science</option>
                 <option value="10+2">Bachelor's in Medical/Pharmacy</option>
@@ -57,18 +56,19 @@
                 <option value="10+2">Bachelor's in Fashion/Interior Design or related Fields</option>
                 <option value="10+2">Bachelor's in Psychology/Physical Education</option>
                 <option value="10+2">Bachelor's in Others</option>
-                <option value="Bachelors">Master's in Psychology</option>
+                <option value="Psychology">Psychology</option>
                 <option value="10+2">Master's in Others</option>
               </select>
            </div>
-           <div class="mb-2">
+           <!-- <div class="mb-2">
             <label for="preferredCourse" class="form-label">Preferred Course</label>
             <select class="form-select" name="preferredCourse" >
-                <option selected>subject</option>
-                <option value="10+2" >10+2</option>
-                <option value="Bachelors">Bachelors</option>
+               
+                <option value="M.A. (Yoga)" >M.A. (Yoga)</option>
+                <option value="M.A.in Economics ">M.A.in Economics </option>
+                <option value="B.Sc. (Hons. Physics)">B.Sc. (Hons. Physics)</option>
               </select>
-           </div>
+           </div> -->
             <button class="btn btn-dark signup-btn mt-3 mb-2">Submit</button>
         </form>
                  <hr/>

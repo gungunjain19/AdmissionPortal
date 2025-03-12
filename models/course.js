@@ -3,34 +3,38 @@
 const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 
-const userSchema = new schema({
-   fullName : {
+const courseSchema = new schema({
+   name : {
     type : String,
     required : true
    },
-    email : {
+    college : {
     type : String,
     required : true
    },
-   phoneNumber : {
+   seats : {
     type : Number,
     required : true
    },
-   qualification : {
+   girlFee : [{
+    type : Number,
+    required : true
+   }],
+   boyFee : [{
+    type : Number,
+    required : true
+   }],
+   description : {
     type : String,
-    enum : ["10+2","Undergraduate","Postgraduate"],
     required : true
    },
-   subject : {
+  eligibility : {
     type : String,
     required : true
-   },
-  preferredCourse : {
-    type : String,
   }
  
 });
 
 
-const User = mongoose.model("User",userSchema);
-module.exports = User;
+const Course = mongoose.model("Course",courseSchema);
+module.exports = Course;

@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>broshure display page</h1>
+    <div class="row">
+        <% for(course of allCourses) { %>
+            <a href="/course/<%= course._id %>" class="listing-link">
+                <div class="card col listing-card" >
+                   
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                      <p class="card-text"> <b> <%= course.name %> </b> <br/> 
+                       <p><%= course.college %></p>
+                       <p>No. of seats : <%= course.seats %></p>
+                    </p>
+                      
+                    </div>
+               
+                </div>
+                 </a>
+    
+            <% } %>
+    </div>
+
+        
+       
+     
 </body>
 </html>
