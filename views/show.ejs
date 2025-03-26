@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/showStyle.css" rel="stylesheet">
 </head>
 <body>
-    <div class="row">
-        <% for(course of allCourses) { %>
-            <a href="/course/<%= course._id %>" class="listing-link">
-                <div class="card col listing-card" >
-                   
-                    <div class="card-img-overlay"></div>
-                    <div class="card-body">
-                      <p class="card-text"> <b> <%= course.name %> </b> <br/> 
-                       <p><%= course.college %></p>
-                       <p>No. of seats : <%= course.seats %></p>
-                    </p>
-                      
-                    </div>
-               
-                </div>
-                 </a>
-    
-            <% } %>
-    </div>
+    <header>
+        <img src="../davvLogo2.png" alt="University Logo">
+        <h1>Devi Ahilya Vishwavidyalaya, Indore</h1>
+    </header>
+    <br/>
+    <h1>Here are your preferred Courses</h1>
+    <br/>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(course of allCourses){ %>
+            <a href="/user/course/<%= course._id %>" class="course-link">
+        <div class="card col course-card" >
+           
+            <div class="card-text-overlay">
+            <div class="card-body">
+              <h2 class="card-text"> <b> <%= course.name %> </b> <br/> </h2>
+              <h4 class="card-text"><%= course.college %></h4>
+            </div>
+        </div>
+        </div>
+         </a>
+         <hr/>
+          <% } %>
+        </div>
 
         
        
-     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
 </body>
 </html>

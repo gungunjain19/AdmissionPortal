@@ -10,7 +10,7 @@ const courseSchema = new schema({
    },
     college : {
     type : String,
-    required : true
+    required:true,
    },
    seats : {
     type : Number,
@@ -31,8 +31,15 @@ const courseSchema = new schema({
   eligibility : {
     type : String,
     required : true
-  }
- 
+  },
+ phone : {
+  type : Number,
+  required : true
+ },
+ email : {
+  type : String,
+  required : true
+ },
 });
 
 

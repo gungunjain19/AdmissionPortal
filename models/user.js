@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 
 const userSchema = new schema({
-   fullName : {
+   name : {
     type : String,
     required : true
    },
@@ -25,9 +25,9 @@ const userSchema = new schema({
     type : String,
     required : true
    },
-  preferredCourse : {
+  preferredCourse : [{
     type : String,
-  }
+  }]
  
 });
 

@@ -1,49 +1,955 @@
-const Course = require("../models/course.js");
-const mongoose = require("mongoose");
 
-let sampleData = [{
-    name : "M.A. (Yoga)",
+
+const sampleData = [
+    {
+    name : "MA in Yoga",
     college : "School of Yoga",
     seats : 50,
     girlFee : [59832],
     boyFee : [60644],
     description : "MA Yoga is a two-year postgraduate course that focuses on understanding several areas of Yoga which prepares students to practice yoga therapy and helps those with psychosomatic problems",
-    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma"
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
 },{
-    name : "B.Sc. (Hons. Physics)",
+    name : "B.Sc. Honours in Physics",
     college : "School of Physics",
     seats : 40,
     girlFee : [21422],
     boyFee : [21630],
     description : "BSc Physics Honours is a 3-years undergraduate course which is pursued by students who are interested in an in-depth knowledge of the principles of Physics and its practical application & theories.",
-    eligibility : "10+2 with Mathematics as a subject with at least 50% marks in aggregate."
+    eligibility : "10+2 with Mathematics as a subject with at least 50% marks in aggregate.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
 },{
-    name : "M.A.in Economics ",
+    name : "MA in Economics",
     college : "School of Economics",
     seats : 60,
     girlFee : [7976],
     boyFee : [8156],
     description : "MA Economics is a 2-year postgraduate degree that encompasses a detailed study of the nuances of economic development and various branches of economics.",
-    eligibility : "Graduation in any stream with 50 % marks."
-},];
+    eligibility : "Graduation in any stream with 50 % marks.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Data Science for Logistics",
+    college : "Centre of Excellence in Logistics",
+    seats : 30,
+    girlFee : [43333],
+    boyFee : [43711],
+    description : "An M.Sc. in Data Science for Logistics is a specialized postgraduate program that combines data science techniques with logistics and supply chain management. It equips students with skills in data analytics, inventory models, and marketing analytics to solve complex problems in logistics and operations.",
+    eligibility : "B.E. / B. Tech. in a relevant branch of Engineering or Bachelor’s degree in Physics / Mathematics/ Statistics / Computer Science / BCA or any other degree in relevant subject",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech in Logistics and Supply Chain Management",
+    college : "Centre of Excellence in Logistics",
+    seats : 30,
+    girlFee : [49332],
+    boyFee : [48916],
+    description : "An M.Tech in Logistics and Supply Chain Management is a specialized postgraduate engineering program focused on optimizing the flow of goods, services, and information within supply chains.",
+    eligibility : "B.E. / B.Tech. in a relevant branch of Engineering or Master’s degree in Physics / Mathematics/ Statistics / Computer Science or any other degree from in relevant subject",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Diploma in Digital Marketing",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A Diploma in Digital Marketing is a professional course designed to provide foundational and advanced knowledge of digital marketing strategies and tools. It covers topics such as SEO (Search Engine Optimization), social media marketing, email marketing, content marketing, online advertising, and analytics.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Diploma in Fitness Nutrition",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A Diploma in Fitness Nutrition is a professional course designed to provide comprehensive knowledge about nutrition and its role in fitness and health. It covers topics like diet planning, sports nutrition, weight management, supplementation, and nutrition for different age groups.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Diploma in Import and Export",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A Diploma in Import and Export is a professional course that focuses on the principles and practices of international trade. It covers topics such as export documentation, import regulations, trade financing, global supply chains, and market analysis.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Diploma in Logistics and Supply (Cargo Management)",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A Diploma in Logistics and Supply (Cargo Management) is a professional program designed to equip students with skills and knowledge in managing the transportation, storage, and distribution of goods.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Voc. in Software Development",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "An M.Voc. (Master of Vocation) in Software Development is an advanced vocational program focused on equipping students with practical and theoretical knowledge in software design, development, and deployment.",
+    eligibility : "B. Voc. or one Year Diploma in respective sector with graduation in any discipline",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Voc in Nutrition & Dietetics",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "An M.Voc. (Master of Vocation) in Nutrition & Dietetics is an advanced vocational program aimed at providing in-depth knowledge and practical skills in the field of nutrition, health, and diet planning.",
+    eligibility : "B.Voc. or one Year Diploma in respective sector with graduation in any discipline",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Voc in Landscape Design",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A B.Voc. (Bachelor of Vocation) in Landscape Design is an undergraduate program focused on teaching practical and theoretical aspects of designing outdoor spaces. It covers areas like site planning, horticulture, environmental sustainability, landscape architecture, and the use of software tools for design.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Voc in Nutrition & Dietetics",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A B.Voc. (Bachelor of Vocation) in Nutrition & Dietetics is an undergraduate program focused on providing practical and theoretical knowledge about nutrition, health, and diet planning.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Voc in Software Development",
+    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
+    seats : 30,
+    girlFee : [21000],
+    boyFee : [21000],
+    description : "A B.Voc. (Bachelor of Vocation) in Software Development is an undergraduate program focusing on practical and theoretical aspects of software creation and implementation. It covers topics such as programming languages, software engineering, database management, web development, and emerging technologies.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Diploma in Interior Designing",
+    college : "Department of Life Long Learning",
+    seats : 30,
+    girlFee : [0],
+    boyFee : [0],
+    description : "Diploma in Interior Designing is a professional course that focuses on the art and science of enhancing interior spaces. It covers topics such as space planning, color theory, furniture design, lighting, and the use of design software.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Voc in Fashion Technology",
+    college : "Department of Life Long Learning",
+    seats : 20,
+    girlFee : [0],
+    boyFee : [0],
+    description : "An M.Voc. (Master of Vocation) in Fashion Technology is an advanced vocational program focusing on the practical and theoretical aspects of the fashion industry. It covers areas such as textile technology, garment production, fashion design, merchandising, and sustainable practices.",
+    eligibility : "Graduate degree with Fashion Technoloyg, B.Voc. / One or Two or Three Year diploma in Fashion Design",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Voc in Fashion Technology",
+    college : "Department of Life Long Learning",
+    seats : 30,
+    girlFee : [0],
+    boyFee : [0],
+    description : "A B.Voc. (Bachelor of Vocation) in Fashion Technology is an undergraduate program designed to provide practical and theoretical knowledge about the fashion industry. It covers topics such as fashion design, textile technology, garment manufacturing, merchandising, and sustainable fashion practices.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Voc in Interior Design ",
+    college : "Department of Life Long Learning",
+    seats : 50,
+    girlFee : [0],
+    boyFee : [0],
+    description : "A B.Voc. (Bachelor of Vocation) in Interior Design is an undergraduate program focusing on the artistic and technical aspects of designing interior spaces. It covers topics such as space planning, furniture design, color schemes, lighting, and the use of design software.",
+    eligibility : "10+2 pass or equivalent in any stream",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.E. in Computer Engineering",
+    college : "Institute of Engineering and Technology",
+    seats : 28,
+    girlFee : [67833,46833],
+    boyFee : [68211,47211],
+    description : "ME (Full Time)/ME (Part Time) Computer Engineeering With Specialization In Software Engineering. It has total of 28 seats, 13 Seats Regular,5 seats SPFT,10 seats PT.",
+    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.E. in Electronics with specialization in Digital Instrumentation",
+    college : "Institute of Engineering and Technology",
+    seats : 28,
+    girlFee : [67833,46833],
+    boyFee : [68211,47211],
+    description : "ME (Full Time)/ME (Part Time) Electronics with Specialization In Digital Instrmentation. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
+    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.E. in Electronics with Specialization In Digital Communication",
+    college : "Institute of Engineering and Technology",
+    seats : 28,
+    girlFee : [67833,46833],
+    boyFee : [68211,47211],
+    description : "ME (Full Time)/ME (Part Time) in Electronics with Specializaton In Digital Communication. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
+    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.E. in Industrial Engineering & Management",
+    college : "Institute of Engineering and Technology",
+    seats : 28,
+    girlFee : [67833,46833],
+    boyFee : [68211,47211],
+    description : "ME (Full Time)/ME (Part Time) Industrial Engineering & Management. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
+    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.E. in Mechanical Engineering",
+    college : "Institute of Engineering and Technology",
+    seats : 28,
+    girlFee : [67833,46833],
+    boyFee : [68211,47211],
+    description : "ME (Full Time)/ME (Part Time) Mechanical Engineering With Specialization In Design & Thermal. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
+    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MSc. in Applied Mathematics",
+    college : "Institute of Engineering and Technology",
+    seats : 30,
+    girlFee : [24833],
+    boyFee : [25211],
+    description : "MSc. in Applied Mathematics with Specialization In Computing & Informatics. It has 30 regular seats.",
+    eligibility : "B.SC/B.C.A/B.A/B.E/B.TECH.( With Mathematics as one subject) passed with minium 50% marks in aggregate. The candidate should have passed 12th with Mathematics subject.The relaxation of 5% marks in Mathematics for SC/ST candidate.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MTech in Microelectronics & VLSI Design",
+    college : "Institute of Engineering and Technology",
+    seats : 24,
+    girlFee : [44416],
+    boyFee : [44832],
+    description : "MTech (Full Time) Microelectronics & VLSI Design. It has 24 regular seats.",
+    eligibility : "B.E/B.Tech.in ECE/EEE/EIE/CSE/IT(OR) M.Sc.( Electronics/Applied Electronics) (or) M.Sc. (Physics- Specialistion in Electronics) (or) its equivalent degree in the above Disciplines with a minimum aggregate of 55%. Relaxation of 5% marks in eligibility for sponsored/ SC/ST candidates",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MBA",
+    college : "Institute of Management Studies (IMS)",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MBA (Executive) (only for wokring professionals / self employed)",
+    eligibility : "Candidates having Graduate or Postgraduate degree with minimum 45% marks from a recognized University and having executive/ managerial experience of at least FIVE YEARS after graduation OR at least TWO YEARS experience after Post graduation in Industry/ Government sector will be eligible for admission. Professional and Self Employed Entrepreneur will also be eligible for admission provided he/ she is a Graduate/ Postgraduate with at least 45% marks and has been working in self-employment for at least TWO YEARS after graduation.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Biochemistry",
+    college : "School of Biochemistry",
+    seats : 30,
+    girlFee : [22946],
+    boyFee : [23332],
+    description : "It has 30 seats, 20 regular and 10 self-financed. Fees structure Boys - 23332 Girls - 22946, For Self Finance Boys - 32332 Girls - 31916",
+    eligibility : "Bachelor degree in Biological Sciences from a recognized University with 55% marks in aggregate.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Biotechnology",
+    college : "School of Biochemistry",
+    seats : 20,
+    girlFee : [62916],
+    boyFee : [63332],
+    description : "An M.Sc. in Biotechnology is a postgraduate program that delves into the application of biological processes and technologies in fields such as healthcare, agriculture, environment, and industry.",
+    eligibility : "Bachelor's Degree under 10+2+3 pattern in Biological Science / Physical Science / Agricultural Sciences / Veterinary Sciences /Fishery Sciences securing at least 55 percent marks or equivalent. Candidate having Engineering / Technnology / Pharmacy Graduation / MBBS / BDS with at least 55% marks are also eligible.",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Genetic Engineering",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Chemistry",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Com in Accounting & Financial Control",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Com in Bank Management",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
 
-main().then((res)=>{
-    console.log("connection to DB succesfull");
-})
-.catch(err => console.log(err));
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/davvportal');
-}
+{
+    name : "M.Sc. in Information Technology",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Computer Science",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech (Computer Science) Execuitve",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech (Information Architecture & Software Engineering)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech (Network Management & Information Security).Sc. in Genetic Engineering",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "PGDCA",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Data Science and Analytics",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech.Executive (Data Science)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M-Tech (Big Data Analytics)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    college : "School of Biochemis",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M-Tech (Data Science)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech. Embedded Systems",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Sc. in Electronics, Computer Science and Mathematics",
+    college : "School of Commerce",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Electronics and Communication",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech. Energy Management (AICTE Approved)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech. Energy Management (Executive)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "PG Diploma in Climate Action and Sustainability",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Instrumentation(M.Tech.) Executive",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Agriculture Communication",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Digital Media",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Film Appreciation",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Sport Journalism",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Script Writing",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Photography",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "BA in Journalism & Mass Communication",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "BA in Journalism",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MA in Health Communication",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MA in Film Studies",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MA in Journalism & Mass Communication",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certification Course (French/ German)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M. A. (Functional Hindi Translation and Literature)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M. A. (Sanskrit−Jyotish)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M. A.(English Literature)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "BSW",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Bachelor of Library and Information Science",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Industrial Microbiology",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. in Life Sciences",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Sc. in Agriculture",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. from School of Mathematics",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Sc. from School of Mathematics",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "D.PHARM.",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "MA in Sports Psychology",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Master of Physical Education",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "BPES",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Sc. (Physics) or M.Sc. (Physics) Material Science",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.Tech. Laser Science & Applications",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Sc. in Applied Statistics & Analytics",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Sc. Honours in Applied Statistics and Analytics",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "BA in Yogic Science",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "B.Sc. in Yogic Science",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "P.G. Diploma (Yoga Therapy",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Certificate Course in Sindhi Language",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "Diploma in Sindhi Language & Literature",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.A. (Sindhi)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "M.A. (Tribal Studies)",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+];
 
-//deleting already existing data
-//adding our new sampledata
-const initDB = async ()=>{
-    await Course.deleteMany({});
-    await Course.insertMany(sampleData);
-    console.log("data was initialized");
-}
-
-initDB();
+module.exports = {data : sampleData};
 //67cfb10e15ec838750d1cbd0
 //67cfb10e15ec838750d1cbd1
 //67cfb10e15ec838750d1cbd2

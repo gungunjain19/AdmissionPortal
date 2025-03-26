@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background: navy;
+    color: white;
+    padding: 10px;
+}
+
+header img {
+    height: 60px;
+    margin-right: 20px;
+    display : block;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Notice Board */
+.notice-board {
+    width: 30%;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notice-container {
+    height: 270px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse; /* Start from the bottom */
+}
+
+.notice-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 1s ease-in-out;
+}
+
+.notice-container ul li {
+    padding: 10px;
+    font-size: 16px;
+    color: green;
+}
+
+/* Form */
+.form-container {
+    width: 60%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px; /* Fixed height for the select element */
+    max-height: 120px; /* Maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+select[multiple] {
+    height: 40; /* Reduced height from 120px to 80px */
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     /* Fixed height for the select element */
+   
+    overflow-y: auto;
+}
+
+/* Button */
+button {
+    background: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}

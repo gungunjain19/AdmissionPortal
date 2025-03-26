@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Query</title>
+    <link href="/style.css" rel="stylesheet">
+    
+</head>
+<body> 
+
+   
+    <header>
+        <img src="../davvLogo2.png" alt="University Logo">
+        <h1>Devi Ahilya Vishwavidyalaya, Indore</h1>
+    </header>
+
+    <div class="container">
+        <!-- Notice Secti!on -->
+        <div class="notice-board">
+            <h2>Admission Notices</h2>
+            <div class="notice-container">
+                <ul id="notice-list">
+                    <li>Helpline</li>
+                    <li>Info. Brochure of all UTD's</li>
+                    <li>HOD of UTD's</li>
+                    <li>Admission Info. in BSc</li>
+                    <li>Admission Open in BTech</li>
+                    <li>Admission Open in MTech</li>
+                    <li>Admission Open in BSc</li>
+                    <li>Admisssion open in iet</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Admission Form -->
+        <div class="form-container">
+            <h2>Admission Details</h2>
+            <form id="admissionForm" action="/user/register" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phoneNumber" required>
+
+                <label for="previousEducation">Select Previous Qualification:</label>
+                <select id="previousEducation" name="qualification" required>
+                    <option value="">-- Select Qualification --</option>
+                    <option value="10+2">10+2</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
+                </select>
+
+                <div id="categorySelection" style="display: none;" >
+                    <label for="category">Select Category:</label>
+                    <select id="category" name="subject" required>
+                        <option value="">-- Select Category --</option>
+                    </select>
+                </div>
+                
+
+                <div id="courseSelection" style="display: none;">
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="preferredCourse" multiple required>
+                        <option value="">-- Select Course --</option>
+                    </select>
+                </div>
+
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/SelectScript.js"></script>
+</body>
+</html>
