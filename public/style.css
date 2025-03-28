@@ -83,22 +83,22 @@ select {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    height: 40px; /* Fixed height for the select element */
-    max-height: 120px; /* Maximum height */
+    max-height: 200px;
+    /* height: 40px; Fixed height for the select element Maximum height */
     overflow-y: auto; /* Enable vertical scrolling */
 }
 
-select[multiple] {
-    height: 40; /* Reduced height from 120px to 80px */
+select [multiple]{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-     /* Fixed height for the select element */
-   
-    overflow-y: auto;
+    height: 40px; /* Fixed height for the select element */
+    max-height: 200px;/* Maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
+
 
 /* Button */
 button {

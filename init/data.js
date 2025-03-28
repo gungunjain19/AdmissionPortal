@@ -947,9 +947,28 @@ const sampleData = [
     phone : 9999999999,
     email : "tempEmail@gmail.com"
 },
+{
+    name : "PG Diploma in Labour Law & Personnel Management",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
+{
+    name : "PG Diploma in Human Rights",
+    college : "School of Biochemistry",
+    seats : 120,
+    girlFee : [49500],
+    boyFee : [49500],
+    description : "MA Yoga is a two-year postgraduate ",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 9999999999,
+    email : "tempEmail@gmail.com"
+},
 ];
 
 module.exports = {data : sampleData};
-//67cfb10e15ec838750d1cbd0
-//67cfb10e15ec838750d1cbd1
-//67cfb10e15ec838750d1cbd2

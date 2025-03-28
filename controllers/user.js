@@ -1,6 +1,7 @@
 const User = require("../models/user.js");
 const Course = require("../models/course.js");
 
+
 module.exports.renderRegisterPage =  (req,res) => {
     res.render("registrationNew.ejs");
 }
@@ -8,10 +9,10 @@ module.exports.renderRegisterPage =  (req,res) => {
 module.exports.register = async (req,res) => {
     try{
         let {name,email,phoneNumber,qualification,subject,preferredCourse} = req.body;
-        console.log(req.body);
         const newUser = new User({name,email,phoneNumber,qualification,subject,preferredCourse});
         await newUser.save();
-
+      
+             
       let allCourses = await Course.find( { name : {$in : preferredCourse}});
       return res.render("show.ejs",{allCourses});
     }
