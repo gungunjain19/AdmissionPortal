@@ -6,7 +6,7 @@ const userController = require("../controllers/user.js");
 
 router.get("/register",userController.renderRegisterPage);
        
-router.post("/register", emailSending,userController.register);
+router.post("/register", emailSending, userController.register);
     
 router.get("/course/:id", userController.display);
 

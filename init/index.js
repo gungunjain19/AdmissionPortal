@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const initData = require("./data.js");
 
 main().then((res)=>{
-    console.log("connection to DB succesfull");
+  console.log("connection to DB succesfull");
 })
 .catch(err => console.log(err));
 async function main() {

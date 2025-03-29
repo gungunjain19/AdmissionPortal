@@ -27,6 +27,7 @@ const userSchema = new schema({
    },
   preferredCourse : [{
     type : String,
+    required : true
   }]
  
 });

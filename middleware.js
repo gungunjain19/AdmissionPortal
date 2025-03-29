@@ -2,7 +2,8 @@ const nodemailer = require("nodemailer");
 const mailgen = require("mailgen");
 
 module.exports.emailSending = async (req,res,next) => {
-    try{
+
+    try {
         let config = {
             service : "gmail",
             secure : true,
@@ -12,6 +13,7 @@ module.exports.emailSending = async (req,res,next) => {
                 pass : process.env.APP_PASSWORD
             }
           }
+
           const transporter = nodemailer.createTransport(config);
           let MailGenerator = new mailgen({
             theme : "default",
@@ -20,8 +22,10 @@ module.exports.emailSending = async (req,res,next) => {
                 link : 'https://mailgen.js/'
             }
           })
+
          let response = {
            body : {
+            signature : "Best Regards, Team DAVV",
             name : req.body.name, 
             intro : "Here's a list of brochure for your preferred courses",
             action: {
@@ -29,10 +33,10 @@ module.exports.emailSending = async (req,res,next) => {
                 button: {
                     color: '#22BC66', 
                     text: 'View brochures',
-                    link: 'https://ietdavv.edu.in/index.php/academics/syllabus'
+                    link: 'http://localhost:3006/user/register'
                 }
             },
-            outro : "Best Regards, Team DAVV"
+          
            }
          }
     
@@ -58,5 +62,4 @@ module.exports.emailSending = async (req,res,next) => {
         console.log(err);
         next();
     }
-   
 }

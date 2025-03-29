@@ -12,7 +12,6 @@ module.exports.register = async (req,res) => {
         const newUser = new User({name,email,phoneNumber,qualification,subject,preferredCourse});
         await newUser.save();
       
-             
       let allCourses = await Course.find( { name : {$in : preferredCourse}});
       return res.render("show.ejs",{allCourses});
     }
@@ -22,7 +21,12 @@ module.exports.register = async (req,res) => {
 }
 
 module.exports.display = async (req,res) => {
-    let {id} = req.params;
-    let course = await Course.findById(id);
-    res.render("displayCourse.ejs",{course});
+    try{
+        let {id} = req.params;
+        let course = await Course.findById(id);
+        res.render("displayCourse.ejs",{course});
+    }
+    catch(err){
+        console.log(err);
+    }
 }

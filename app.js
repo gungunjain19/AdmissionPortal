@@ -27,7 +27,7 @@ async function main() {
 }
 
 
-app.get("/",(req,res) => {
+app.get("/",(req,res) => { 
   res.render("index.ejs");
 });
 
@@ -36,7 +36,6 @@ app.use("/user",userRouter);
 app.all( "*", (req,res,next) => {
     next(new ExpressError(404,"Page Not Found!"));
 });
-
 
 //handling custom error 
 app.use((err ,req ,res ,next ) => {
