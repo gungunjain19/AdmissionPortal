@@ -1,6 +1,7 @@
 const User = require("../models/user.js");
 const Course = require("../models/course.js");
-
+const nodemailer = require("nodemailer");
+const mailgen = require("mailgen");
 
 module.exports.renderRegisterPage =  (req,res) => {
     res.render("registrationNew.ejs");
@@ -11,7 +12,62 @@ module.exports.register = async (req,res) => {
         let {name,email,phoneNumber,qualification,subject,preferredCourse} = req.body;
         const newUser = new User({name,email,phoneNumber,qualification,subject,preferredCourse});
         await newUser.save();
+
+      // start sending email
+      let config = {
+        service : "gmail",
+        secure : true,
+        port : 465,
+        auth : {
+            user : process.env.APP_EMAIL,
+            pass : process.env.APP_PASSWORD
+        }
+      }
+
+      const transporter = nodemailer.createTransport(config);
+      let MailGenerator = new mailgen({
+        theme : "default",
+        product : {
+            name : "mailgen",
+            link : 'https://mailgen.js/'
+        }
+      })
+     let linkForEmail = 'http://localhost:3006/user/email/' + newUser._id;
+     let response = {
+       body : {
+        signature : "Best Regards, Team DAVV",
+        name : req.body.name, 
+        intro : "Here's a list of brochure for your preferred courses",
+        action: {
+            instructions: 'To view the brochures, please click here:',
+            button: {
+                color: '#22BC66', 
+                text: 'View brochures',
+                link: linkForEmail
+            }
+        },
       
+       }
+     }
+
+     let mail = MailGenerator.generate(response)
+
+      let message = {
+        from : process.env.APP_EMAIL,
+        to : req.body.email,
+        subject : "Welcome to Devi Ahilya Vishwa Vidyalaya",
+        html : mail
+      }
+
+     await transporter.sendMail(message).then(() => {
+       console.log("email sent");
+     }).catch((err)=> {
+       
+        console.log("invalid email")
+        console.log(err);
+        // next(new ExpressError(404,"Enter a valid Email"));
+        })
+        // end sending email
       let allCourses = await Course.find( { name : {$in : preferredCourse}});
       return res.render("show.ejs",{allCourses});
     }
@@ -29,4 +85,16 @@ module.exports.display = async (req,res) => {
     catch(err){
         console.log(err);
     }
+}
+
+module.exports.emailDisplay = async (req,res) => {
+    try{
+      let {id} = req.params;
+      const requestedUser = await User.findById(id);
+      let allCourses = await Course.find( { name : {$in : requestedUser.preferredCourse}});
+      let username = requestedUser.name;
+      res.render("emailDisplay.ejs",{allCourses,username});
+    }
+    catch(err){
+        console.log(err);    }
 }
