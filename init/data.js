@@ -1,6 +1,26 @@
 
 
 const sampleData = [
+    {name : "Certificate course in Knowledge Participation and Development",
+        college : "Baha’i Chair for Studies in Development",
+        seats : 20,
+        girlFee : [3500],
+        boyFee : [3500],
+        description : "A certificate course in Knowledge, Participation, and Development explores how knowledge systems, community participation, and inclusive development intersect to shape sustainable and equitable societies. It typically addresses themes such as indigenous and local knowledge, participatory development practices, power dynamics in knowledge production, and the role of communities in planning and implementing development initiatives.",
+        eligibility : "Graduate from any descipline",
+        phone : 7869389593,
+        email : "info@bahaichairdavv.org"
+    },
+   {name : "Certificate course in Environmental Ethics",
+            college : "Baha’i Chair for Studies in Development",
+            seats : 20,
+            girlFee : [3500],
+            boyFee : [3500],
+            description : "A certificate course in Environmental Ethics provides foundational knowledge about the ethical principles and values that guide human interactions with the natural environment. It typically covers topics such as environmental justice, sustainability, biodiversity conservation, climate change ethics, and the rights of future generations.",
+            eligibility : "Graduate from any descipline",
+            phone : 7869389593,
+            email : "info@bahaichairdavv.org"
+        },
 {
     name : "M.Sc. in Data Science for Logistics",
     college : "Centre of Excellence in Logistics",
@@ -9,8 +29,8 @@ const sampleData = [
     boyFee : [43711],
     description : "An M.Sc. in Data Science for Logistics is a specialized postgraduate program that combines data science techniques with logistics and supply chain management. It equips students with skills in data analytics, inventory models, and marketing analytics to solve complex problems in logistics and operations.",
     eligibility : "B.E. / B. Tech. in a relevant branch of Engineering or Bachelor’s degree in Physics / Mathematics/ Statistics / Computer Science / BCA or any other degree in relevant subject",
-    phone : 7312527532,
-    email : "registrar.davv@mp.gov.in"
+    phone : 9425311674,
+    email : "nsohani@ietdavv.edu.in"
 },
 {
     name : "M.Tech in Logistics and Supply Chain Management",
@@ -20,231 +40,209 @@ const sampleData = [
     boyFee : [48916],
     description : "An M.Tech in Logistics and Supply Chain Management is a specialized postgraduate engineering program focused on optimizing the flow of goods, services, and information within supply chains.",
     eligibility : "B.E. / B.Tech. in a relevant branch of Engineering or Master’s degree in Physics / Mathematics/ Statistics / Computer Science or any other degree from in relevant subject",
-    phone : 7312527532,
-    email : "registrar.davv@mp.gov.in"
+    phone : 9425311674,
+   email : "nsohani@ietdavv.edu.in"
 },
 {
     name : "Diploma in Digital Marketing",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A Diploma in Digital Marketing is a professional course designed to provide foundational and advanced knowledge of digital marketing strategies and tools. It covers topics such as SEO (Search Engine Optimization), social media marketing, email marketing, content marketing, online advertising, and analytics.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
     name : "Diploma in Fitness Nutrition",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
-    description : "A Diploma in Fitness Nutrition is a professional course designed to provide comprehensive knowledge about nutrition and its role in fitness and health. It covers topics like diet planning, sports nutrition, weight management, supplementation, and nutrition for different age groups.",
+    girlFee : [38333],
+    boyFee : [38711],
+    description : "It is an online Diploma in Fitness Nutrition is a professional course designed to provide comprehensive knowledge about nutrition and its role in fitness and health. It covers topics like diet planning, sports nutrition, weight management, supplementation, and nutrition for different age groups.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
     name : "Diploma in Import and Export",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
-    description : "A Diploma in Import and Export is a professional course that focuses on the principles and practices of international trade. It covers topics such as export documentation, import regulations, trade financing, global supply chains, and market analysis.",
+    girlFee : [38333],
+    boyFee : [38711],
+    description : "A Diploma in Import and Export Management is a professional course that focuses on the principles and practices of international trade. It covers topics such as export documentation, import regulations, trade financing, global supply chains, and market analysis.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
     name : "Diploma in Logistics and Supply (Cargo Management)",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A Diploma in Logistics and Supply (Cargo Management) is a professional program designed to equip students with skills and knowledge in managing the transportation, storage, and distribution of goods.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
-    name : "M.Voc. in Software Development",
+    name : "M.Voc. in Nutrition & Dietetics",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
-    description : "An M.Voc. (Master of Vocation) in Software Development is an advanced vocational program focused on equipping students with practical and theoretical knowledge in software design, development, and deployment.",
-    eligibility : "B.Voc. in software development or one Year Diploma in respective sector with graduation in any discipline",
-    phone : 9977777739,
-    email : "ddukkdavv@gmail.com"
-},
-{
-    name : "M.Voc in Nutrition & Dietetics",
-    college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
-    seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
+    girlFee : [42333],
+    boyFee : [42711],
     description : "An M.Voc. (Master of Vocation) in Nutrition & Dietetics is an advanced vocational program aimed at providing in-depth knowledge and practical skills in the field of nutrition, health, and diet planning.",
     eligibility : "B.Voc. in Nutrition and Dietetics or one Year Diploma in respective sector with graduation in any discipline",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
-    name : "B.Voc in Landscape Design",
+    name : "B.Voc. in Landscape Design",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A B.Voc. (Bachelor of Vocation) in Landscape Design is an undergraduate program focused on teaching practical and theoretical aspects of designing outdoor spaces. It covers areas like site planning, horticulture, environmental sustainability, landscape architecture, and the use of software tools for design.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
-    name : "B.Voc in Nutrition & Dietetics",
+    name : "B.Voc. in Nutrition & Dietetics",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A B.Voc. (Bachelor of Vocation) in Nutrition & Dietetics is an undergraduate program focused on providing practical and theoretical knowledge about nutrition, health, and diet planning.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
-    name : "B.Voc in Software Development",
+    name : "B.Voc. in Software Development",
     college : "Deen Dayal Upadhyay Kaushal Kendra (DDUKK)",
     seats : 30,
-    girlFee : [21000],
-    boyFee : [21000],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A B.Voc. (Bachelor of Vocation) in Software Development is an undergraduate program focusing on practical and theoretical aspects of software creation and implementation. It covers topics such as programming languages, software engineering, database management, web development, and emerging technologies.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 9977777739,
+    phone : 9424002073,
     email : "ddukkdavv@gmail.com"
 },
 {
     name : "Diploma in Interior Designing",
     college : "Department of Life Long Learning",
     seats : 30,
-    girlFee : [27916],
-    boyFee : [28332],
+    girlFee : [27333],
+    boyFee : [27711],
     description : "Diploma in Interior Designing is a professional course that focuses on the art and science of enhancing interior spaces. It covers topics such as space planning, color theory, furniture design, lighting, and the use of design software.",
-    eligibility : "10+2 pass or equivalent in any stream",
-    phone : 7312363800,
-    email : "bj.lifelonglearning@yahoo.com"
+    eligibility : "10+2 pass or equivalent in any stream with 50% marks",
+   phone : 9285000359,
+    email : "dollleducation@gmail.com"
 },
 {
-    name : "M.Voc in Fashion Technology",
+    name : "M.Voc. in Fashion Technology",
     college : "Department of Life Long Learning",
     seats : 20,
-    girlFee : [42916],
-    boyFee : [43332],
+    girlFee : [42333],
+    boyFee : [42711],
     description : "An M.Voc. (Master of Vocation) in Fashion Technology is an advanced vocational program focusing on the practical and theoretical aspects of the fashion industry. It covers areas such as textile technology, garment production, fashion design, merchandising, and sustainable practices.",
     eligibility : "Graduate degree with Fashion Technoloyg, B.Voc. / One or Two or Three Year diploma in Fashion Design",
-    phone : 7312363800,
-    email : "bj.lifelonglearning@yahoo.com"
+    phone : 9285000359,
+    email : "dollleducation@gmail.com"
 },
 {
-    name : "B.Voc in Fashion Technology",
+    name : "B.Voc. in Fashion Technology",
     college : "Department of Life Long Learning",
     seats : 30,
-    girlFee : [38916],
-    boyFee : [39332],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A B.Voc. (Bachelor of Vocation) in Fashion Technology is an undergraduate program designed to provide practical and theoretical knowledge about the fashion industry. It covers topics such as fashion design, textile technology, garment manufacturing, merchandising, and sustainable fashion practices.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 7312363800,
-    email : "bj.lifelonglearning@yahoo.com"
+    phone : 9285000359,
+    email : "dollleducation@gmail.com"
 },
 {
-    name : "B.Voc in Interior Design",
+    name : "B.Voc. in Interior Design",
     college : "Department of Life Long Learning",
     seats : 50,
-    girlFee : [38916],
-    boyFee : [39332],
+    girlFee : [38333],
+    boyFee : [38711],
     description : "A B.Voc. (Bachelor of Vocation) in Interior Design is an undergraduate program focusing on the artistic and technical aspects of designing interior spaces. It covers topics such as space planning, furniture design, color schemes, lighting, and the use of design software.",
     eligibility : "10+2 pass or equivalent in any stream",
-    phone : 7312363800,
-    email : "bj.lifelonglearning@yahoo.com"
+    phone : 9285000359,
+    email : "dollleducation@gmail.com"
 },
 {
-    name : "M.A. in Women Empowerment & Lifelong Learning",
-    college : "Department of Life Long Learning",
-    seats : 30,
-    girlFee : [39916],
-    boyFee : [40332],
-    description : "The MA in Women Empowerment and Lifelong Learning is a postgraduate program that explores gender studies, social justice, and lifelong education. It focuses on empowering women through education, policy-making, and skill development.",
-    eligibility : "Graduate Degree in any subject",
-    phone : 7312363800,
-    email : "bj.lifelonglearning@yahoo.com"
-},
-{
-    name : "M.E. in Computer Engineering",
+    name : "M.Tech in Computer Engineering with Specialization In Software Engineering",
     college : "Institute of Engineering and Technology",
     seats : 28,
     girlFee : [67833,46833],
     boyFee : [68211,47211],
-    description : "ME (Full Time)/ME (Part Time) Computer Engineeering With Specialization In Software Engineering. It has total of 28 seats, 13 Seats Regular,5 seats SPFT,10 seats PT.",
-    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    description : "M.Tech (Full Time)/M.Tech (Part Time) Computer Engineeering With Specialization In Software Engineering is an AICTE approved program. It has total of 28 seats, 13 Seats Regular,5 seats Sponser Full Time, 10 seats for part time programme.\n Full Time Boys Fee - 68211 and Girls Fee - 67833 \n Part Time Boys Fee - 47211 and Girls Fee - 46833",
+    eligibility : "At least 60% aggregate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates.\n For GATE qualified candidates- Valid GATE Score In the rerevant / allied branch of Engineering technology.",
     phone : 9977186156,
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "M.E. in Electronics with specialization in Digital Instrumentation",
+    name : "M.Tech in Electronics with specialization in Digital Instrumentation",
     college : "Institute of Engineering and Technology",
     seats : 28,
     girlFee : [67833,46833],
     boyFee : [68211,47211],
-    description : "ME (Full Time)/ME (Part Time) Electronics with Specialization In Digital Instrmentation. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
-    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    description : "M.Tech (Full Time)/M.Tech (Part Time) Electronics with specialization in Digital Instrumentationis an AICTE approved program. It has total of 28 seats, 13 Seats Regular,5 seats Sponser Full Time, 10 seats for part time programme.\n Full Time Boys Fee - 68211 and Girls Fee - 67833 \n Part Time Boys Fee - 47211 and Girls Fee - 46833",
+    eligibility : "At least 60% aggregate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates.\n For GATE qualified candidates- Valid GATE Score In the rerevant / allied branch of Engineering technology.",
     phone : 9977186156,
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "M.E. in Electronics with Specialization In Digital Communication",
+    name : "M.Tech in Electronics with Specialization In Digital Communication",
     college : "Institute of Engineering and Technology",
     seats : 28,
     girlFee : [67833,46833],
     boyFee : [68211,47211],
-    description : "ME (Full Time)/ME (Part Time) in Electronics with Specializaton In Digital Communication. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
-    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    description : "M.Tech (Full Time)/M.Tech (Part Time) Electronics with Specialization In Digital Communication is an AICTE approved program. It has total of 28 seats, 13 Seats Regular,5 seats Sponser Full Time, 10 seats for part time programme.\n Full Time Boys Fee - 68211 and Girls Fee - 67833 \n Part Time Boys Fee - 47211 and Girls Fee - 46833",
+    eligibility : "At least 60% aggregate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates.\n For GATE qualified candidates- Valid GATE Score In the rerevant / allied branch of Engineering technology.",
     phone : 9977186156,
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "M.E. in Industrial Engineering & Management",
+    name : "M.Tech in Industrial Engineering & Management",
     college : "Institute of Engineering and Technology",
     seats : 28,
     girlFee : [67833,46833],
     boyFee : [68211,47211],
-    description : "ME (Full Time)/ME (Part Time) Industrial Engineering & Management. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
-    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    description : "M.Tech (Full Time)/M.Tech (Part Time) Industrial Engineering & Management is an AICTE approved program. It has total of 28 seats, 13 Seats Regular,5 seats Sponser Full Time, 10 seats for part time programme.\n Full Time Boys Fee - 68211 and Girls Fee - 67833 \n Part Time Boys Fee - 47211 and Girls Fee - 46833",
+    eligibility : "At least 60% aggregate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates.\n For GATE qualified candidates- Valid GATE Score In the rerevant / allied branch of Engineering technology.",
     phone : 9977186156,
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "M.E. in Mechanical Engineering",
+    name : "M.Tech in Mechanical Engineering with specialization in Design and Thermal",
     college : "Institute of Engineering and Technology",
     seats : 28,
     girlFee : [67833,46833],
     boyFee : [68211,47211],
-    description : "ME (Full Time)/ME (Part Time) Mechanical Engineering With Specialization In Design & Thermal. It has total of 28 seats, 13 seats Regular,5 seats SPFT,10 seats PT",
-    eligibility : "At least 60% aggrecgate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates Valid GATE Score In the rerevant / allied branch of Engineering technology.",
+    description : "M.Tech (Full Time)/M.Tech (Part Time) Mechanical Engineering with specialization in Design and Thermal is an AICTE approved program. It has total of 28 seats, 13 Seats Regular,5 seats Sponser Full Time, 10 seats for part time programme.\n Full Time Boys Fee - 68211 and Girls Fee - 67833 \n Part Time Boys Fee - 47211 and Girls Fee - 46833",
+    eligibility : "At least 60% aggregate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates.\n For GATE qualified candidates- Valid GATE Score In the rerevant / allied branch of Engineering technology.",
     phone : 9977186156,
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "MSc. in Applied Mathematics",
+    name : "M.Tech in Information Technology with specialization in Information Security",
     college : "Institute of Engineering and Technology",
-    seats : 30,
-    girlFee : [24833],
-    boyFee : [25211],
-    description : "MSc. in Applied Mathematics with Specialization In Computing & Informatics. It has 30 regular seats.",
-    eligibility : "B.SC/B.C.A/B.A/B.E/B.TECH.( With Mathematics as one subject) passed with minium 50% marks in aggregate. The candidate should have passed 12th with Mathematics subject.The relaxation of 5% marks in Mathematics for SC/ST candidate.",
+    seats : 28,
+    girlFee : [67833,46833],
+    boyFee : [68211,47211],
+    description : "M.Tech (Full Time)/M.Tech (Part Time) Information Technology with specialization in Information Security is an AICTE approved program. It has total of 28 seats, 13 Seats Regular,5 seats Sponser Full Time, 10 seats for part time programme.\n Full Time Boys Fee - 68211 and Girls Fee - 67833 \n Part Time Boys Fee - 47211 and Girls Fee - 46833",
+    eligibility : "At least 60% aggregate marks BE/Btech or Equivalent in an allied branch of Engineering from recoginzed Institute / University Relaxation of 5% marks in eligibilty for Sponsored /SC /ST candidates.\n For GATE qualified candidates- Valid GATE Score In the rerevant / allied branch of Engineering technology.",
     phone : 9977186156,
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "MTech in Microelectronics & VLSI Design",
+    name : "M.Tech in Microelectronics & VLSI Design",
     college : "Institute of Engineering and Technology",
     seats : 24,
     girlFee : [44416],
@@ -255,25 +253,25 @@ const sampleData = [
     email : "webmaster@ietdavv.edu.in"
 },
 {
-    name : "Certificate Course in Knowledge Participation and Development",	
-    college : "Baha’i Chair for Studies in Development",
-    seats : 20,
-    girlFee : [4500],
-    boyFee : [4500],
-    description : "A Certificate Course in Knowledge Participation and Development focuses on understanding the role of knowledge sharing, participation, and community-driven development in fostering sustainable growth. The course covers topics like participatory development, community engagement, knowledge management, and the impact of information and communication technologies (ICT) on development. The 17 week course offered in ablended format· The course offers a mix of theoretical understanding and practical insights into applying learning methodologies in development",
-    eligibility : "Graduate from any discipline",
-    phone : 7869389593,
-    email : "education@bahaichairdavv.org"
+    name : "M.Sc. in Applied Mathematics with specialization in Computing and Informatics",
+    college : "Institute of Engineering and Technology",
+    seats : 30,
+    girlFee : [24833],
+    boyFee : [25211],
+    description : "M.Sc. in Applied Mathematics with specialization in Computing and Informatics. It has 30 regular seats.",
+    eligibility : "B.SC/B.C.A/B.A/B.E/B.TECH.(With Mathematics as one subject) passed with minimum 50% marks in aggregate. The candidate should have passed 12th with Mathematics subject. The relaxation of 5% marks in Mathematics for SC/ST candidate",
+    phone : 9977186156,
+    email : "webmaster@ietdavv.edu.in"
 },
 {
     name : "MBA Executive",
     college : "Institute of Management Studies (IMS)",
     seats : 120,
-    girlFee : [49500],
-    boyFee : [49500],
-    description : "MBA (Executive) (only for wokring professionals / self employed)",
+    girlFee : [90000],
+    boyFee : [90000],
+    description : "MBA Executive (only for wokring professionals / self employed)",
     eligibility : "Candidates having Graduate or Postgraduate degree with minimum 45% marks from a recognized University and having executive/ managerial experience of at least FIVE YEARS after graduation OR at least TWO YEARS experience after Post graduation in Industry/ Government sector will be eligible for admission. Professional and Self Employed Entrepreneur will also be eligible for admission provided he/ she is a Graduate/ Postgraduate with at least 45% marks and has been working in self-employment for at least TWO YEARS after graduation.",
-    phone : 9425062474,
+    phone : 9893052677,
     email : "director.imsdavv@gmail.com"
 },
 {
@@ -282,7 +280,7 @@ const sampleData = [
     seats : 30,
     girlFee : [22946],
     boyFee : [23332],
-    description : "It has 30 seats, 20 regular and 10 self-financed. Fees structure Boys - 23332 Girls - 22946, For Self Finance Boys - 32332 Girls - 31916",
+    description : "It has 30 seats, 20 regular and 10 self-financed seats. Fees structure: Regular Boys - 23332 & Girls - 22946, For Self Finance Boys - 32332 & Girls - 31916",
     eligibility : "Bachelor degree in Biological Sciences from a recognized University with 55% marks in aggregate.",
     phone : 7312460276,
     email : "meetajainind@yahoo.com"
@@ -302,8 +300,8 @@ const sampleData = [
     name : "M.Sc. in Genetic Engineering",
     college : "School of Biotechnology",
     seats : 20,
-    girlFee : [49500],
-    boyFee : [49500],
+    girlFee : [52916],
+    boyFee : [53332],
     description : "Master of Science in Genetic Engineering",
     eligibility : "Bachelor’s Degree under 10+2+3 Pattern in Biological Science/ Physical Science/ Agricultural Sciences/ Veterinary Sciences/ Fishery Sciences, securing at least 55 %marks or equivalent.Candidates having Engineering/ Technology/ Pharmacy /Gradation/ MBBS/ BDS with at least 55 per cent marks are also eligible",
     phone : 7312470373,
@@ -313,8 +311,8 @@ const sampleData = [
     name : "M.Sc. in Bioinformatics",
     college : "School of Biotechnology",
     seats : 20,
-    girlFee : [49500],
-    boyFee : [49500],
+    girlFee : [42916],
+    boyFee : [43332],
     description : "Master of Science in Bioinformatics",
     eligibility : "Bachelor’s Degree under 10+2+3 Pattern in Biological Science/ Physical Science/ Agricultural Sciences/ Veterinary Sciences/ Fishery Sciences, securing at least 55 %marks or equivalent.Candidates having Engineering/ Technology/ Pharmacy /Gradation/ MBBS/ BDS with at least 55 per cent marks are also eligible",
     phone : 7312470373,
@@ -324,67 +322,111 @@ const sampleData = [
     name : "M.Sc. in Chemistry",
     college : "School of Chemical Sciences",
     seats : 50,
-    girlFee : [49500],
-    boyFee : [49500],
+    girlFee : [20916],
+    boyFee : [21332],
     description : "Master of science in Chemistry",
     eligibility : "B.Sc. with 50 % marks and Chemistry as one of the subjects.",
     phone : 7312460208,
-    email : "registrar.davv@mp.gov.in"
+    email : "Nil"
 },
 {
     name : "M.Com in Accounting & Financial Control",
     college : "School of Commerce",
     seats : 40,
-    girlFee : [49500],
-    boyFee : [49500],
+    girlFee : [33916],
+    boyFee : [34332],
     description : "An M.Com. (Master of Commerce) in Accounting and Financial Control is a postgraduate degree that focuses on advanced concepts in accounting, finance, and business management. This program equips students with the skills and knowledge necessary to manage financial operations, ensure compliance with regulations, and analyze financial data for decision-making.",
-    eligibility : "Graduate Degree in Commerce/ Science Stream with second division",
-    phone : 9999999999,
-    email : "registrar.davv@mp.gov.in"
+    eligibility : "Graduate Degree in Commerce/ Science Stream with minimum second division",
+    phone : 9165084755,
+    email : "head.scom@dauniv.ac.in"
 },
 {
     name : "M.Com in Bank Management",
     college : "School of Commerce",
     seats : 40,
-    girlFee : [49500],
-    boyFee : [49500],
+    girlFee : [33916],
+    boyFee : [34332],
     description : "An MCom (Master of Commerce) in Bank Management is a postgraduate program designed to provide in-depth knowledge of banking operations, financial services, and the regulatory environment. This course focuses on topics such as financial institutions, risk management, credit analysis, banking laws, and strategic banking practices.",
-    eligibility : "Graduate Degree in Commerce/ Science Stream with second division",
-    phone : 9999999999,
-    email : "registrar.davv@mp.gov.in"
+    eligibility : "Graduate Degree in Commerce/ Science Stream with minimum second division",
+    phone : 9165084755,
+    email : "head.scom@dauniv.ac.in"
+},
+{
+    name : "M.Tech in Computer Science",
+    college : "School of Computer Science & Information Technology",
+    seats : 18,
+    girlFee : [57416], 
+    boyFee : [53832],
+    description : "Masters of Technology in Computer Science is an AICTE approved program. Fee Structure for sponsored students is : Girls-87416 Boys-87832",
+    eligibility : "GATE qualified in CSE/ECE with 4 year of study at university level/ B.E./ B.Tech (CSE/ IT/ Computer related subjects)/ MCA/ M.Sc. (CS/IT) with 55% marks in aggregate. Relaxation of 5% marks in eligibility for sponsored/ SC/ ST candidates. For sponsored candidates minimum two year working experience after qualifying degree is required. The sponsored candidates have to submit a certificate from the employer on the prescribed proforma. After the admission of Gate qualified candidates, Non-GATE candidates are also admitted if seats remain vacant.",
+    phone : 9826623640,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Information Architecture & Software Engineering",
+    college : "School of Computer Science & Information Technology",
+    seats : 18,
+    girlFee : [57416], 
+    boyFee : [53832],
+    description : "Masters of Technology in Information Architecture & Software Engineering is an AICTE approved program. Fee Structure for sponsored students is : Girls-87416 Boys-87832",
+    eligibility : "GATE qualified in CSE/ECE with 4 year of study at university level/ B.E./ B.Tech (CSE/ IT/ Computer related subjects)/ MCA/ M.Sc. (CS/IT) with 55% marks in aggregate. Relaxation of 5% marks in eligibility for sponsored/ SC/ ST candidates. For sponsored candidates minimum two year working experience after qualifying degree is required. The sponsored candidates have to submit a certificate from the employer on the prescribed proforma. After the admission of Gate qualified candidates, Non-GATE candidates are also admitted if seats remain vacant.",
+    phone : 9826623640,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Network Management & Information Security",
+    college : "School of Computer Science & Information Technology",
+    seats : 18,
+    girlFee : [57416], 
+    boyFee : [53832],
+    description : "Masters of Technology in Network Management & Information Security is an AICTE approved program. Fee Structure for sponsored students is : Girls-87416 Boys-87832",
+    eligibility : "GATE qualified in CSE/ECE with 4 year of study at university level/ B.E./ B.Tech (CSE/ IT/ Computer related subjects)/ MCA/ M.Sc. (CS/IT) with 55% marks in aggregate. Relaxation of 5% marks in eligibility for sponsored/ SC/ ST candidates. For sponsored candidates minimum two year working experience after qualifying degree is required. The sponsored candidates have to submit a certificate from the employer on the prescribed proforma. After the admission of Gate qualified candidates, Non-GATE candidates are also admitted if seats remain vacant.",
+    phone : 9826623640,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Computer Science Executive",
+    college : "School of Computer Science & Information Technology",
+    seats : 18,
+    girlFee : [69416], 
+    boyFee : [69832],
+    description : "Masters of Technology in Computer Science (Executive)",
+    eligibility : "B.E./B.Tech. (CS/ IT/ computing related subjects)/ MCA/ M.Sc. (CS/IT) with minimum 55% marks in aggregate. The candidate must have a minimum work experience of 2 years in academic/ industry and be employed at the time of admission. Also, candidates have to submit a certificate from the employer on the prescribed proforma.",
+    phone : 9826623640,
+    email : "NIL"
 },
 {
     name : "M.Sc. in Information Technology",
     college : "School of Computer Science & Information Technology",
     seats : 30,
-    girlFee : [53832],
-    boyFee : [53832],
+    girlFee : [49416],
+    boyFee : [49832],
     description : "An MSc in Information Technology (IT) is a postgraduate program that focuses on the advanced study of computer systems, software development, networking, database management, cybersecurity, and IT project management.",
     eligibility : "B.C.A./B.Sc. (Hons)/B.Sc. (Computer Science /Electronics/Physics/Information Technology /Electronics and Tele−communication) with 50 % marks and Mathematics as one of the compulsory subjects.",
     phone : 9826623640,
-    email : "sanjay_tanwani@hotmail.com"
+    email : "NIL"
 },
 {
     name : "M.Sc. in Computer Science",
     college : "School of Computer Science & Information Technology",
     seats : 30,
-    girlFee : [53832],
-    boyFee : [53832],
+    girlFee : [49416],
+    boyFee : [49832],
     description : "An MSc in Computer Science is a postgraduate program that provides advanced knowledge in areas such as algorithms, data structures, software development, artificial intelligence, machine learning, cybersecurity, and database management.",
     eligibility : "B.C.A./B.Sc. (Hons)/B.Sc. (Computer Science /Electronics/Physics/Information Technology /Electronics and Tele−communication) with 50 % marks and Mathematics as one of the compulsory subjects.",
     phone : 9826623640,
-    email : "sanjay_tanwani@hotmail.com"
+   email : "NIL"
 },
 {
     name : "PGDCA",
     college : "School of Computer Science & Information Technology",
-    seats : 15,
-    girlFee : [51832],
-    boyFee : [51832],
+    seats : 30,
+    girlFee : [47416],
+    boyFee : [47832],
     description : "A Postgraduate Diploma in Computer Applications (PGDCA) is a one-year postgraduate program designed to provide students with practical and theoretical knowledge of computer applications and information technology. The course covers topics such as programming languages, database management, software engineering, web development, networking, and IT tools.",
     eligibility : "Graduate in any stream with min. 50% marks.",
     phone : 9826623640,
-    email : "sanjay_tanwani@hotmail.com"
+   email : "NIL"
 },
 {
     name : "M.Sc. in Data Science and Analytics",
@@ -398,103 +440,213 @@ const sampleData = [
     email : "stokekar@ietdavv.edu.in"
 },
 {
+    name : "M.Tech in Data Science",
+    college : "School of Data Science and Forecasting",
+    seats : 24,
+    girlFee : [36916],
+    boyFee : [37332],
+    description : "An MTech in Data Science is an AICTE approved postgraduate program that focuses on the advanced study of data analysis, statistical methods, machine learning, and data-driven decision-making. The course covers topics such as data mining, big data technologies, programming languages (e.g., Python, R), artificial intelligence, and data visualization.",
+    eligibility : "At least 55% aggregate marks in B.E./B.Tech. in any relevant branch of Engineering or Masters degree in Physics / Mathematics/ Statistics / Computer Science or any other equivalent degree. Relaxation of 5% marks in eligibility for sponsored/ SC/ ST candidates.",
+    phone : 7312470330,
+    email : "stokekar@ietdavv.edu.in"
+},
+{
+    name : "M.Tech in Big Data Analytics",
+    college : "School of Data Science and Forecasting",
+    seats : 24,
+    girlFee : [46916],
+    boyFee : [47332],
+    description : "An MTech in Big Data Analytics is an AICTE approved postgraduate program that focuses on the advanced study of data analysis, statistical methods, machine learning, and data-driven decision-making. The course covers topics such as data mining, big data technologies, programming languages (e.g., Python, R), artificial intelligence, and data visualization.",
+    eligibility : "At least 55% aggregate marks in B.E./B.Tech. in any relevant branch of Engineering or Masters degree in Physics / Mathematics/ Statistics / Computer Science or any other equivalent degree. Relaxation of 5% marks in eligibility for sponsored/ SC/ ST candidates.",
+    phone : 7312470330,
+    email : "stokekar@ietdavv.edu.in"
+},
+{
+    name : "M.Tech in Data Science (Executive)",
+    college : "School of Data Science and Forecasting",
+    seats : 15,
+    girlFee : [66916],
+    boyFee : [67332],
+    description : "An MTech in Data Science (Executive) is a postgraduate program that focuses on the advanced study of data analysis, statistical methods, machine learning, and data-driven decision-making. The course covers topics such as data mining, big data technologies, programming languages (e.g., Python, R), artificial intelligence, and data visualization.",
+    eligibility : "The candidate should have at least 55% aggregate marks in B.E. / B.Tech./ M.Sc. in a relevant subject or any other equivalent degree (including M.C.A.) from a recognised University. Relaxation of 5% marks in eligibility for SC/ ST candidates. Relevant subjects,for admission in M.Tech. Data Science, are CS/CSE/IT/Maths./Physics/ Statistics/ Computer Applications or other computer related subjects.The candidates must have minimum two years of working experience after qualifying degree. The candidates have to submit a certificate from the employer on the prescribed Performance",
+    phone : 7312470330,
+    email : "stokekar@ietdavv.edu.in"
+},
+{
     name : "MA in Economics",
     college : "School of Economics",
     seats : 60,
-    girlFee : [7976],
-    boyFee : [8156],
+    girlFee : [18846],
+    boyFee : [19262],
     description : "MA Economics is a 2-year postgraduate degree that encompasses a detailed study of the nuances of economic development and various branches of economics.",
     eligibility : "Graduation in any stream with 50 % marks.",
     phone : 7312361087,
-    email : "enquiry@soedavv.ac.in"
+    email : "Kanhaiya.ahuja@gmail.com"
 },
 {
     name : "B.Sc. in Electronics, Computer Science and Mathematics",
-    college : "School of Electronics and Communication",
+    college : "School of Electronics",
     seats : 30,
-    girlFee : [25172],
-    boyFee : [25382],
+    girlFee : [40916],
+    boyFee : [41332],
     description : "A B.Sc. in Electronics, Computer Science, and Mathematics is an interdisciplinary undergraduate program that combines core principles from electronics, computer science, and mathematics. The course covers topics such as circuit design, digital electronics, programming, algorithms, data structures, calculus, linear algebra, and discrete mathematics.",
     eligibility : "10 + 2 with in Science stream with Mathematics as compulsory subject with 50 % Marks.",
-    phone : 7312463754,
-    email : "soex.davv.office@gmail.com"
+    phone : 9425938254,
+    email : "Sumant578@gmail.com"
 },
 {
     name : "M.Sc. in Electronics and Communication",
-    college : "School of Electronics and Communication",
+    college : "School of Electronics",
     seats : 40,
-    girlFee : [14672], 
-    boyFee : [14880],
+    girlFee : [19916], 
+    boyFee : [20332],
     description : "An MSc in Electronics and Telecommunication is a postgraduate program that focuses on advanced concepts in electronics, communication systems, and telecommunication technologies. The course covers topics such as analog and digital communication, signal processing, microelectronics, wireless communication, networking, and optical communication.",
     eligibility : "B.Sc. or B.Sc.(Honours) Electronics/ Physics/  Computer Science/ IT/ Instrumentation or BCA with minimum 50 % aggregate marks",
-    phone : 7312463754,
-    email : "soex.davv.office@gmail.com"
+    phone : 9425938254,
+    email : "Sumant578@gmail.com"
+},
+{
+    name : "M.Tech in Embedded Systems",
+    college : "School of Electronics",
+    seats : 18,
+    girlFee : [51216], 
+    boyFee : [51632],
+    description : "M.Tech in Embedded Systems is a two year programme.",
+    eligibility : "At least 55% aggregate marks in B.E. / B.Tech. in Electronics / EC / Elec. & Inst. / CS / Comp. Engg. / IT or equivalent or M.Sc. In Electronics / EC / CS / IT or MCA or any other equivalent degree",
+    phone : 9425938254,
+    email : "Sumant578@gmail.com"
+},
+{
+    name : "M.Tech in Embedded Systems Executive",
+    college : "School of Electronics",
+    seats : 15,
+    girlFee : [66416], 
+    boyFee : [66832],
+    description : "M.Tech in Embedded Systems executive is a two year programme.",
+    eligibility : "At least 55% aggregate marks in B.E. / B.Tech. in Electronics / EC / Elec. & Inst. / CS / Comp. Engg. / IT or equivalent or M.Sc. In Electronics / EC / CS / IT or MCA or any other equivalent degree",
+    phone : 9425938254,
+    email : "Sumant578@gmail.com"
 },
 {
     name : "PG Diploma in Climate Action and Sustainability",
     college : "School of Energy & Environmental Studies",
-    seats : 18,
+    seats : 30,
     girlFee : [81916],
-    boyFee : [82330],
+    boyFee : [82332],
     description : "A PG Diploma in Climate Action and Sustainability is a postgraduate program focused on addressing the global challenges of climate change and promoting sustainable development. The course covers topics such as environmental policy, climate change mitigation and adaptation, renewable energy, sustainable resource management, and environmental economics.",
-    eligibility : "At leat 55% aggregate marks in B.E. / B.Tech. in any branch of Engineering + M.Sc. Physics",
-    phone : 7312466309,
-    email : "psanjali@gmail.co"
+    eligibility : "At leat 55% aggregate marks in B.E. / B.Tech. in any branch of Engineering/M.Sc. in any branch/MBA (finance) / M.A. in Economics/Sustainability",
+    phone : 9826617141,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Energy Management",
+    college : "School of Energy & Environmental Studies",
+    seats : 18,
+    girlFee : [50416],
+    boyFee : [50332],
+    description : "M.Tech in Energy Management is an AICTE approved two year programme.",
+    eligibility : "At leat 55% aggregate marks in B.E. / B.Tech. in any branch of Engineering + M.Sc. Physics and two year working experience",
+    phone : 9826617141,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Energy Management (Executive)",
+    college : "School of Energy & Environmental Studies",
+    seats : 18,
+    girlFee : [72416],
+    boyFee : [72832],
+    description : "M.Tech in Energy Management (Executive) is a two year programme.",
+    eligibility : "At leat 55% aggregate marks in B.E. / B.Tech. in any branch of Engineering + M.Sc. Physics and two year working Experience",
+    phone : 9826617141,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Instrumentation",
+    college : "School of Instrumentation",
+    seats : 18,
+    girlFee : [39917],
+    boyFee : [40332],
+    description : "M.Tech in Instrumentation is an AICTE approved two year programme.",
+    eligibility : "B.E./B. Tech. Degree in Computer Science, Electronics, Electrical, Instrumentation, Chemical, Mechanical Engineering or M.Sc. in Computer Science, Electronics, Instrumentation, or Physics with 55% marks in qualifying examination. Relaxation of 5% marks in eligibility for SC/ST candidates will be provided for the applicants of Madhya Pradesh domicile only.",
+     phone : 9165360552 ,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Instrumentation Executive",
+    college : "School of Instrumentation",
+    seats : 15,
+    girlFee : [66917],
+    boyFee : [67332],
+    description : "M.Tech in Instrumentation (Executive) is a two year programme.",
+    eligibility : "B.E./B.Tech. Degree in Computer Science, Electronics, Electrical, Instrumentation, Chemical, Mechanical Engineering or M.Sc. in Computer Science, Electronics, Instrumentation, or Physics with 55% marks in qualifying examination. Relaxation of 5% marks in eligibility for SC/ST candidates will be provided for the applicants of Madhya Pradesh domicile only.The candidates must have minimum two years of working experience after qualifying degree. The candidates have to submit a certificate from the employer on the prescribed Performance.",
+     phone : 9165360552 ,
+    email : "NIL"
+},
+{
+    name : "M.Tech in Internet of Things",
+    college : "School of Instrumentation",
+    seats : 18,
+    girlFee : [39917],
+    boyFee : [40332],
+    description : "M.Tech in Internet of Things is an AICTE approved two year programme.",
+    eligibility : "B.E./B.Tech. Degree in Computer Science, Electronics, Electrical, Instrumentation, Chemical, Mechanical Engineering or M.Sc. in Computer Science, Electronics, Instrumentation, or Physics with 55% marks in qualifying examination. Relaxation of 5% marks in eligibility for SC/ST candidates will be provided for the applicants of Madhya Pradesh domicile only.",
+    phone : 9165360552 ,
+    email : "NIL"
 },
 {
     name : "Certificate Course in Agriculture Communication",
     college : "School of Journalism and Mass Communication",
     seats : 30,
-    girlFee : [26722],
-    boyFee : [26930],
+    girlFee : [59850],
+    boyFee : [59850],
     description : "A Certificate Course in Agriculture Communication is a specialized program that focuses on effective communication strategies within the agriculture sector. The course covers topics such as agricultural journalism, rural development communication, media outreach, agricultural policy, and the use of digital media to promote farming practices and agricultural technologies.",
-    eligibility : "10 + 2 in any stream",
+    eligibility : "10 + 2 in any stream with 50% marks",
     phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "Certificate Course in Digital Media",
-    college : "School of Journalism and Mass Communication ",
+    college : "School of Journalism and Mass Communication",
     seats : 30,
-    girlFee : [26722],
-    boyFee : [26930],
-    description : "A Certificate Course in Digital Media is a short-term program that focuses on the skills and tools necessary for creating, managing, and promoting content across various digital platforms. The course covers topics such as digital marketing, social media strategies, web content creation, video production, SEO (Search Engine Optimization), and online advertising.",
-    eligibility : "10 + 2 in any stream",
-     phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+    girlFee : [59850],
+    boyFee : [59850],
+    description : "A certificate course in Digital Media introduces the fundamentals of digital communication, content creation, and media technologies. It typically covers topics such as social media platforms, digital storytelling, multimedia production (video, audio, graphics), digital marketing, and the ethical use of digital tools.",
+    eligibility : "10 + 2 in any stream with 50% marks",
+    phone : 9425317435,
+    email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "Certificate Course in Film Appreciation",
     college : "School of Journalism and Mass Communication",
     seats : 30,
-    girlFee : [26722],
-    boyFee : [26930],
+    girlFee : [59850],
+    boyFee : [59850],
     description : "A Certificate Course in Film Appreciation is a short-term program designed to enhance students' understanding and appreciation of cinema as an art form. The course covers topics such as film history, cinematic techniques, genres, directing, editing, and the cultural impact of films. ",
-    eligibility : "10 + 2 in any stream",
+    eligibility : "10 + 2 in any stream with 50% marks",
     phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "Certificate Course in Sport Journalism",
     college : "School of Journalism and Mass Communication ",
     seats : 30,
-    girlFee : [26722],
-    boyFee : [26930],
+    girlFee : [59850],
+    boyFee : [59850],
     description : "A Certificate Course in Sport Journalism is a short-term program that focuses on the skills required to report, write, and analyze sports events and stories. The course covers topics such as sports reporting, commentary, media ethics, interviewing techniques, and the use of digital media in sports journalism.",
-    eligibility : "10 + 2 in any stream",
+    eligibility : "10 + 2 in any stream with 50% marks",
      phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "sonalee.nargunde@gmail.com"
 },
 {
-    name : "Diploma in Screenplay Writing",
+    name : "Diploma in Script Writing",
     college : "School of Journalism and Mass Communication ",
     seats : 25,
-    girlFee : [65833],
-    boyFee : [66211],
-    description : "A Diploma in Screenplay Writing is a specialized program designed to teach the art and craft of writing scripts for films, television, and digital media. The course covers key aspects of screenplay structure, character development, dialogue writing, and plot construction, along with an understanding of the film industry and its dynamics. ",
-    eligibility : "10 + 2 in any stream",
+    girlFee : [59850],
+    boyFee : [59850],
+    description : "A Diploma in Script Writing is a specialized program designed to teach the art and craft of writing scripts for films, television, and digital media. The course covers key aspects of screenplay structure, character development, dialogue writing, and plot construction, along with an understanding of the film industry and its dynamics. ",
+    eligibility : "10 + 2 in any stream with 50% marks",
      phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "Diploma in Photography",
@@ -503,108 +655,119 @@ const sampleData = [
     girlFee : [65833],
     boyFee : [66211],
     description : "A Diploma in Photography is a short-term program that provides students with essential skills and knowledge in various aspects of photography, including camera techniques, lighting, composition, photo editing, and digital photography.",
-    eligibility : "10 + 2 in any stream",
+    eligibility : "10 + 2 in any stream with 50% marks",
      phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+     email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "BA in Journalism & Mass Communication",
     college : "School of Journalism and Mass Communication ",
     seats : 120,
-    girlFee : [44916],
-    boyFee : [45332],
+    girlFee : [40916],
+    boyFee : [41332],
     description : "A BA in Journalism & Mass Communication is an undergraduate program that combines the study of journalism with the broader field of mass media and communication. The course covers topics such as news writing, broadcasting, digital media, media ethics, advertising, public relations, and media laws.",
-    eligibility : "10 + 2 in any stream",
+    eligibility : "10 + 2 in any stream with 50% marks",
      phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+     email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "BA in Journalism",
     college : "School of Journalism and Mass Communication ",
     seats : 35,
-    girlFee : [44916],
-    boyFee : [45332],
-    description : "A BA in Journalism is an undergraduate program that provides students with foundational knowledge and skills in news reporting, writing, editing, and media production. The course covers various aspects of journalism, including print, broadcast, digital media, ethics, investigative reporting, and media law.",
-    eligibility : "Graduate in any discipline",
+    girlFee : [40916],
+    boyFee : [41332],
+    description : "A BA in Journalism is a one year undergraduate program that provides students with foundational knowledge and skills in news reporting, writing, editing, and media production. The course covers various aspects of journalism, including print, broadcast, digital media, ethics, investigative reporting, and media law.",
+    eligibility : "10 + 2 in any stream with 50% marks",
      phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+     email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "MA in Health Communication",
     college : "School of Journalism and Mass Communication ",
-    seats : 20,
-    girlFee : [26722],
-    boyFee : [26930],
+    seats : 25,
+    girlFee : [40916],
+    boyFee : [41332],
     description : "An MA in Health Communication is a postgraduate program that focuses on the strategies and methods used to effectively communicate health-related information to various audiences. The course covers topics such as public health campaigns, media health communication, health literacy, crisis communication, and the role of digital media in health.",
-    eligibility : "Graduate in any discipline",
+    eligibility : "Graduate in any discipline with 50% marks",
     phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+     email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "MA in Film Studies",
     college : "School of Journalism and Mass Communication ",
     seats : 20,
-    girlFee : [44916],
-    boyFee : [45332],
+    girlFee : [40916],
+    boyFee : [41332],
     description : "An MA in Film Studies is a postgraduate program that explores the history, theory, analysis, and production of films. The course covers a range of topics, including film history, cinematic techniques, genres, film criticism, and the cultural impact of cinema.",
-    eligibility : "Graduate in any discipline",
+    eligibility : "Graduate in any discipline with 50% marks",
    phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "sonalee.nargunde@gmail.com"
 },
 {
     name : "MA in Journalism & Mass Communication",
     college : "School of Journalism and Mass Communication ",
     seats : 45,
-    girlFee : [44916],
-    boyFee : [45332],
+    girlFee : [40916],
+    boyFee : [41332],
     description : "An MA in Journalism & Mass Communication is a postgraduate program that focuses on the study of media, journalism practices, and communication strategies in both traditional and digital platforms. The course covers topics such as news reporting, editing, media ethics, public relations, digital media, advertising, and broadcasting.",
-    eligibility : "Graduate in any discipline",
+    eligibility : "Graduate in any discipline with 50% marks",
     phone : 9425317435,
-    email : "registrar.davv@dauniv.ac.in"
+     email : "sonalee.nargunde@gmail.com"
 },
 {
-    name : "Certification Course in French/German",
-    college : "School of Languages",
+    name : "Certification Course in French/German/Spanish",
+    college : "School of Comparative Languages & Culture",
     seats : 40,
-    girlFee : [7750],
-    boyFee : [7750],
-    description : "A Certification Course in French/German is a short-term program designed to teach students the basics of speaking, reading, and writing in French or German. The course typically covers essential grammar, vocabulary, pronunciation, and conversational skills, as well as an introduction to the culture and history of the language.",
+    girlFee : [8750],
+    boyFee : [8750],
+    description : "A Certification Course in French/German/Spanish is a short-term program designed to teach students the basics of speaking, reading, and writing in French or German. The course typically covers essential grammar, vocabulary, pronunciation, and conversational skills, as well as an introduction to the culture and history of the language.",
     eligibility : "10+2 in any stream",
     phone : 7312468957,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "M.A. in Functional Hindi Translation and Literature",
-    college : "School of Languages",
+    college : "School of Comparative Languages & Culture",
     seats : 30,
-    girlFee : [12216],
-    boyFee : [12632],
+    girlFee : [23266],
+    boyFee : [24022],
     description : "An M.A. in Functional Hindi Translation and Literature is a postgraduate program that focuses on the study of Hindi language, literature, and translation techniques. The course covers a wide range of topics, including Hindi literature from classical to contemporary periods, translation theories, and practical translation skills between Hindi and other languages.",
     eligibility : "Graduation in any stream with 50% marks.",
     phone : 7312468957,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "M.A. in Sanskrit−Jyotish",
-    college : "School of Languages",
+    college : "School of Comparative Languages & Culture",
     seats : 30,
-    girlFee : [21916],
-    boyFee : [22332],
+    girlFee : [23266],
+    boyFee : [24022],
     description : "An M.A. in Sanskrit-Jyotish is a postgraduate program that combines the study of classical Sanskrit literature with the principles of Vedic astrology (Jyotish). The course explores ancient texts, scriptures, and philosophies in Sanskrit, alongside the study of astrological systems, planetary influences, horoscopes, and cosmic science.",
     eligibility : "Graduation in any stream with 50% marks.",
     phone : 7312468957,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "M.A. in English Literature",
-    college : "School of Languages",
-    seats : 30,
-    girlFee : [21916],
-    boyFee : [22332],
+    college : "School of Comparative Languages & Culture",
+    seats : 50,
+    girlFee : [43922],
+    boyFee : [42666],
     description : "An M.A. in English Literature is a postgraduate program that delves into the study of literary works from various periods, genres, and regions. The course covers topics such as literary theory, critical analysis, British and American literature, postcolonial studies, and comparative literature. Students gain a deep understanding of the historical, cultural, and social contexts of literature, along with advanced research and writing skills. ",
     eligibility : "Graduation in any stream with 50% marks.",
     phone : 7312468957,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
+},
+{
+    name : "PG Diploma in Functional Hindi Translation",
+    college : "School of Comparative Languages & Culture",
+    seats : 30,
+    girlFee : [18000],
+    boyFee : [19000],
+    description : "The Post Graduate Diploma in Functional Hindi Translation is designed to develop advanced skills in translating various types of content from English to Hindi and vice versa. The course covers translation theory, practical translation techniques, official and literary translation, and the use of Hindi in administrative, legal, and media contexts.",
+    eligibility : "Graduation in any stream with 50% marks.",
+    phone : 7312468957,
+    email : "NIL"
 },
 {
     name : "Master of Library and Information Science",
@@ -615,7 +778,7 @@ const sampleData = [
     description : "A Master of Library and Information Science (MLIS) is a postgraduate program that provides advanced knowledge and skills in library management, information organization, and digital information systems. The course covers areas such as information retrieval, cataloging, archival management, digital libraries, research methodologies, and information technology.",
     eligibility : "Bachelor of Library and Information Science (B.Li.I.Sc) with atleast 50%",
     phone : 7312764315,
-    email :"registrar.davv@dauniv.ac.in"
+    email :"librariandavv@gmail.com"
 },
 {
     name : "Bachelor of Library and Information Science",
@@ -626,40 +789,40 @@ const sampleData = [
     description : "A Bachelor of Library and Information Science (BLISc) is an undergraduate program that focuses on the management, organization, and dissemination of information in libraries and information centers. The course covers topics such as information retrieval, cataloging, classification, digital libraries, archival management, and research methods.",
     eligibility : "Graduation in any stream with 50% marks in aggregate.",
     phone : 7312764315,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "librariandavv@gmail.com"
 },
 {
     name : "M.Sc. in Industrial Microbiology",
-    college : "School of Life Science",
+    college : "School of Life Sciences",
     seats : 15,
-    girlFee : [20880],
-    boyFee : [20880],
+    girlFee : [41344],
+    boyFee : [41760],
     description : "An MSc in Industrial Microbiology is a postgraduate program that focuses on the application of microbiological principles in industrial settings. The course covers topics such as microbial fermentation, bioprocessing, biotechnology, food and beverage microbiology, pharmaceutical microbiology, and environmental microbiology. The fees displayed down there is fee per sem.",
-    eligibility : "First class B.Sc. Degree in subjects of Biological Sciences preferably with Microbiology as one of the subjects at B.Sc. level",
-    phone : 7312477166,
-    email : "registrar.davv@dauniv.ac.in"
+    eligibility : "B.Sc in allied subject with minimum 60% with Microbiology as one subject",
+    phone : 7312467029,
+    email : "office.lifescience@gmail.com"
 },
 {
     name : "M.Sc. in Life Sciences",
-    college : "School of Life Science",
+    college : "School of Life Sciences",
     seats : 20,
-    girlFee : [15380],
-    boyFee : [15380],
+    girlFee : [30344],
+    boyFee : [30760],
     description : "An MSc in Life Sciences is a postgraduate degree that focuses on the study of living organisms, their biological processes, and their interactions with the environment. The program covers a broad range of topics, including molecular biology, genetics, biochemistry, ecology, and biotechnology. The fees displayed down there is fee per sem. ",
-    eligibility : "50 % marks in B.Sc. Degree in subjects of Biological Sciences",
-    phone : 7312477166,
-    email : "registrar.davv@dauniv.ac.in"
+    eligibility : "B.Sc in allied subject with minimum 55%",
+    phone : 7312467029,
+    email : "office.lifescience@gmail.com"
 },
 {
     name : "B.Sc. Honours in Agriculture",
-    college : "School of Life Science",
+    college : "School of Life Sciences",
     seats : 60,
-    girlFee : [59400],
-    boyFee : [59400],
+    girlFee : [117344],
+    boyFee : [117760],
     description : "A BSc Honours in Agriculture is an undergraduate program that focuses on the science and practice of agriculture, including crop production, soil management, agricultural economics, and animal husbandry. The fees displayed down there is fee per sem.",
     eligibility : "10 + 2 with Biology/Math/Agriculture with 50 % marks",
-    phone : 7312477166,
-    email : "registrar.davv@dauniv.ac.in"
+    phone :7312467029,
+    email : "office.lifescience@gmail.com"
 },
 {
     name : "M.Sc. in Mathematics",
@@ -670,18 +833,18 @@ const sampleData = [
     description : "An MSc in Mathematics is a postgraduate degree that provides advanced knowledge and expertise in various mathematical fields such as algebra, analysis, statistics, probability, and computational mathematics.",
     eligibility : "B.Sc. with Mathematics as a principal subject with 50% marks in aggregate as well as in Mathematics.",
     phone : 7312467023,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "B.Sc. Honours in Mathematics",
     college : "School of Mathematics",
     seats : 40,
-    girlFee : [33916],
-    boyFee : [34332],
+    girlFee : [32416],
+    boyFee : [32832],
     description : "A BSc Honours in Mathematics is a three-year undergraduate program that offers in-depth study of mathematical concepts, theories, and techniques. The program covers a wide range of topics, including calculus, algebra, statistics, probability, geometry, and mathematical modeling.",
     eligibility : "10+2 with Mathematics as a subject with at least 50% marks in aggregate as well as in Mathematic.",
     phone : 7312467023,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "Diploma in Pharmacy(D.Pharma)",
@@ -691,48 +854,59 @@ const sampleData = [
     boyFee : [67082],
     description : "A Diploma in Pharmacy (D.Pharm) is a one- to two-year undergraduate program that prepares students for careers in the pharmaceutical field. The course covers topics like pharmacology, pharmaceutical chemistry, drug regulations, and medical ethics. ",
     eligibility : "Pass in 10+2 examination (science academic stream) with Physics, Chemistry and Biology or Mathematics ",
-    phone : 9425478418,
-    email : "registrar.davv@dauniv.ac.in"
+    phone : 9406622383,
+    email : "Sopdavv.admission@gmail.com"
+},
+{
+    name : "Bachelor in Pharmacy(B.Pharma)",
+    college : "School of Pharmacy",
+    seats : 6,
+    girlFee : [47744],
+    boyFee : [47952],
+    description : "Bachelor of pharmacy (lateral entry)",
+    eligibility : "A pass in  D.Pharm course from an institution approved by the Pharmacy Council of India",
+    phone : 9406622383,
+    email : "Sopdavv.admission@gmail.com"
 },
 {
     name : "M.A. in Sports Psychology",
     college : "School of Physical Education",
     seats : 20,
-    girlFee : [28832],
+    girlFee : [28454],
     boyFee : [28832],
     description : "An M.A. in Sports Psychology is a postgraduate degree that focuses on the mental and emotional aspects of sports and exercise. The program covers areas such as performance enhancement, motivation, stress management, team dynamics, and psychological well-being for athletes.",
     eligibility : "(a) BPES degree or Bachelor’s degree in Psychology/Physical Education or Bachelor’s degree with psychology/ Physical Education as one of the subject (Minimum 50% marks) and participation in International/National/ State/District/Intercollege level. OR  (b) Graduation (Minimum 50% marks) with participation at International/National/State level Competition",
-    phone : 9826336271,
-    email : "registrar.davv@dauniv.ac.in"
-},
-{
-    name : "Master of Physical Education",
-    college : "School of Physical Education",
-    seats : 30,
-    girlFee : [45832],
-    boyFee : [45832],
-    description : "A Master of Physical Education (MPEd) is a postgraduate degree program that builds on the foundation of physical education and sports sciences. It focuses on advanced topics such as sports psychology, biomechanics, exercise physiology, sports management, and teaching methodologies.",
-    eligibility : "Graduate degree in BPed or BPES",
-    phone : 9826336271,
-    email : "registrar.davv@dauniv.ac.in"
+    phone : 9907508241,
+    email : "joshiji.phyedu@gmail.com"
 },
 {
     name : "Bachelor of Physical Education and Sports",
     college : "School of Physical Education",
     seats : 70,
-    girlFee : [31832],
+    girlFee : [31454],
     boyFee : [31832],
-    description : "A Bachelor of Physical Education and Sports (BPEd) is an undergraduate degree program focused on the study of physical education, sports science, fitness, and wellness. It prepares students for careers in teaching physical education, coaching, sports management, and fitness training.",
+    description : "A Bachelor of Physical Education and Sports (BPES) is an undergraduate degree program focused on the study of physical education, sports science, fitness, and wellness. It prepares students for careers in teaching physical education, coaching, sports management, and fitness training.",
     eligibility : "10+2 in any stream or an equivalent degree",
-    phone : 9826336271,
-    email : "registrar.davv@dauniv.ac.in"
+    phone : 9907508241,
+    email : "joshiji.phyedu@gmail.com"
+},
+{
+    name : "M.Tech in Laser Science and Applications",
+    college : "School of Physics",
+    seats : 18,
+    girlFee : [31916], 
+    boyFee : [32332],
+    description : "M.Tech in Laser Science and Applications is a 2 year postgraduate degree focusing on advanced physics theories and research, preparing students for careers and research, development and related fields.",
+    eligibility : "At least 55% aggregate marks in B.E. / B. Tech. in Electrical / Electronics Engineering or Masters degree in Physics or any other equivalent",
+    phone : 7312467028,
+    email : "sopdavv1971@gmail.com"
 },
 {
     name : "M.Sc. in Physics",
     college : "School of Physics",
     seats : 35,
-    girlFee : [15172],
-    boyFee : [15380],
+    girlFee : [20916], 
+    boyFee : [21332],
     description : "M.Sc. in Physics is a 2 year postgraduate degree focusing on advanced physics theories and research, preparing students for careers and research, development and related fields.",
     eligibility : "B.Sc. (Physics and Mathematics as a compulsory Subject) with 50% marks/ B. Sc. (Hons. Physics) with 50% marks.",
     phone : 7312467028,
@@ -742,8 +916,8 @@ const sampleData = [
     name : "M.Sc. in Physics-Material Science",
     college : "School of Physics",
     seats : 15,
-    girlFee : [15172],
-    boyFee : [15380],
+    girlFee : [20916], 
+    boyFee : [21332],
     description : "M.Sc. in Physics-Material Science is a 2 year postgraduate degree focusing on advanced physics theories and research, preparing students for careers and research, development and related fields.",
     eligibility : "B.Sc. (Physics and Mathematics as a compulsory Subject) with 50% marks/ B. Sc. (Hons. Physics) with 50% marks.",
     phone : 7312467028,
@@ -753,8 +927,8 @@ const sampleData = [
     name : "B.Sc. in Honours Physics",
     college : "School of Physics",
     seats : 40,
-    girlFee : [21422],
-    boyFee : [21630],
+    girlFee : [33416], 
+    boyFee : [33832],
     description : "B.Sc. in honours physics is a 4 year undergraduate program that provides a deeper understanding of fundamental physics principles, including classical mechanics, quantum mechanics and various scientific and technological fields.",
     eligibility : "10+2 with Mathematics as a subject with at least 50% marks in aggregate.",
     phone : 7312467028,
@@ -763,24 +937,24 @@ const sampleData = [
 {
     name : "M.Sc. in Statistics",
     college : "School of Statistics",
-    seats : 30,
-    girlFee : [15172],
-    boyFee : [15380],
+    seats : 20,
+    girlFee : [21888],
+    boyFee : [22304],
     description : "An M.Sc. in Statistics is a postgraduate degree focusing on advanced statistical theory,methods and applications.",
     eligibility : "B.Sc./B.A./B.C.A.(With Mathematics/Statistics as a major paper in all the three years) with minimum 50% marks",
-    phone : 7312462003,
-    email :  "sbanerjee.stat@dauniv.ac.in"
+    phone : 9827741918,
+    email :  "vanditfsp@gmail.com"
 },
 {
     name : "B.Sc. Honours in Applied Statistics and Analytics",
     college : "School of Statistics",
-    seats : 40,
-    girlFee : [33172],
-    boyFee : [33380],
+    seats : 30,
+    girlFee : [56916],
+    boyFee : [57552],
     description : "B.Sc. Honours in Applied Statistics and Analytics is a 4-year undergraduate program focused on the practical application of statistical methods and techniques to real world data analysis.",
     eligibility : "10+2 with Mathematics as a subject with at least 50% marks in aggregate",
-    phone : 7312462003,
-    email : "sbanerjee.stat@dauniv.ac.in"
+    phone : 9827741918,
+    email : "vanditfsp@gmail.com"
 },
 {
     name : "B.A. in Yogic Science",
@@ -791,7 +965,7 @@ const sampleData = [
     description : "B.A. in Yogic Science is a three-year undergraduate course that focuses on understanding several areas of Yoga which prepares students to practice yoga therapy and helps those with psychosomatic problems",
     eligibility : "10+2 pass in any stream with at least 45% marks.",
     phone : 7312907080,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "B.Sc. in Yogic Science",
@@ -802,18 +976,29 @@ const sampleData = [
     description : "B.Sc. in Yogic Science is a three-year undergraduate course that focuses on understanding several areas of Yoga which prepares students to practice yoga therapy and helps those with psychosomatic problems",
     eligibility : "10+2 pass in any stream with at least 45% marks.",
     phone : 7312907080,
-    email :"registrar.davv@dauniv.ac.in"
+    email :"NIL"
 },
 {
-    name : "M.A. in Yoga",
+    name : "M.A. in Yoga", 
     college : "School of Yoga",
-    seats : 50,
+    seats : 25,
     girlFee : [29333],
     boyFee : [29711],
     description : "MA Yoga is a two-year postgraduate course that focuses on understanding several areas of Yoga which prepares students to practice yoga therapy and helps those with psychosomatic problems",
     eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
     phone : 7312907080,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
+},
+{
+    name : "M.Sc. in Yoga",
+    college : "School of Yoga",
+    seats : 25,
+    girlFee : [29333],
+    boyFee : [29711],
+    description : "M,Sc. Yoga is a two-year postgraduate course that focuses on understanding several areas of Yoga which prepares students to practice yoga therapy and helps those with psychosomatic problems",
+    eligibility : "Graduate Degree in any subject with 45% marks with one year Yoga Diploma",
+    phone : 7312907080,
+    email : "NIL"
 },
 {
     name : "PG Diploma in Yoga Therapy",
@@ -824,7 +1009,7 @@ const sampleData = [
     description : "PG diploma in Yoga therapy is an academic course that focuses on understanding several areas of Yoga which prepares students to practice yoga therapy and helps those with psychosomatic problems",
     eligibility : "Graduate Degree in any subject with 45% marks.",
     phone : 7312907080,
-    email : "registrar.davv@dauniv.ac.in"
+    email : "NIL"
 },
 {
     name : "Certificate Course in Sindhi Language",
@@ -852,8 +1037,8 @@ const sampleData = [
     name : "M.A. in Sindhi",
     college : "Sindhu Shodh Peeth",
     seats : 30,
-    girlFee : [12416],
-    boyFee : [12832],
+    girlFee : [10452],
+    boyFee : [10880],
     description : "An MA degree in Sindhi is a postgraduate academic program focused on the study of the sindhi language,literature,and culture, typically offered by university.",
     eligibility : "Graduate Degree in any subject with 50%",
     phone : 7312470041,
@@ -861,14 +1046,37 @@ const sampleData = [
 },
 {
     name : "M.A. in Tribal Studies",
-    college : "Tribal Studies and Development Center",
+    college : "School of Tribal Studies",
     seats : 60,
-    girlFee : [24785],
-    boyFee : [24785],
+    girlFee : [28274],
+    boyFee : [28690],
     description : "An MA in tribal studies is a postgraduate academic program that offers an in - depth exploration of indigenous or tribal communities,their cultures,histories,languages,social-economic structures, and comtemporary issues.",
     eligibility : "Graduation in any stream with 50% marks.",
-    phone : 7312527532,
-    email : "registrar.davv@dauniv.ac.in"
-},];
+    phone : 9977941666,
+    email : "NIL"
+},
+{
+    name : "MCA (Open and Distance Learning)",
+    college : "Center for Distance and Open Education",
+    seats : 0,
+    girlFee : [39600],
+    boyFee : [39600],
+    description : "MCA (Open and Distance Learning) is an AICTE approved program.",
+    eligibility : "BCA / B.Sc. (Computer Science) / B.Sc. (IT) / B.E. (CSE) / B. Tech. (CSE) / B.E. (IT) / B. Tech. (IT) or, equivalent Degree or Passed any graduation degree (e.g.: B.E. / B. Tech. / B.Com. / B. A. / B. Voc. Etc.) with Mathematics at (10+2) Level or at Graduation Level and obtained at least 50% marks and 45% marks in case of SC/ST/OBC (Excluding Creamy Layer) category of Madhya Pradesh in aggregate from any from any UGC / AICTE approved Indian University or from a foreign University recognized by Association of Indian Universities (AIU) or Institute recognized by the concerned University as equivalent thereto, Bachelor’s degree of minimum 3 years duration.",
+    phone : 9425045326,
+    email : "NIL"
+},
+{
+    name : "MBA (Open and Distance Learning)",
+    college : "Center for Distance and Open Education",
+    seats : 0,
+    girlFee : [39600],
+    boyFee : [39600],
+    description : "MBA (Open and Distance Learning) is an AICTE approved program.",
+    eligibility : "Graduate with at least 50% marks and 45% marks in case of SC/ST/OBC (Excluding Creamy Layer) category of Madhya Pradesh, in aggregate from any UGC / AICTE approved Indian University or from a foreign University recognized by Association of Indian Universities (AIU) or Institute recognized by the concerned University as equivalent thereto. The Bachelor’s degree must be of minimum three years duration after passing Higher Secondary (10+2) examination of (10+2) system or equivalent. *Eligibility for MBA with Specialization in Energy Management Candidate seeking admission to MBA (Energy Management) should be Graduate in Science or Engineering in any discipline with at least 50% marks and 45% marks in case of SC, ST, OBC (excluding creamy layer) category of Madhya Pradesh in aggregate from any from any UGC / AICTE approved Indian University or from a foreign University recognized by Association of Indian Universities (AIU) or Institute recognized by the concerned University as equivalent thereto. The Bachelor’s degree must be of minimum three years duration after passing Higher Secondary (10+2) examination of (10+2) system or equivalent. ",
+    phone : 9425045326,
+    email : "NIL"
+},
+];
  
 module.exports = {data : sampleData};

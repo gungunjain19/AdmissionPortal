@@ -9,6 +9,7 @@ const ejsMate = require("ejs-mate");
 const ExpressError = require("./utils/ExpressError.js");
 
 const userRouter = require("./routes/user.js");
+const contactRouter = require("./routes/contact.js");
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"/views"));
@@ -32,6 +33,9 @@ app.get("/",(req,res) => {
 });
 
 app.use("/user",userRouter);
+app.use("/contact",contactRouter);
+
+
 
 app.all( "*", (req,res,next) => {
     next(new ExpressError(404,"Page Not Found!"));

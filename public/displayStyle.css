@@ -124,7 +124,15 @@ h2 {
 .contact-info a:hover {
     color: #0056b3;
 }
-
+#brochureBtn{
+    border-radius: 4px;
+    background-color: navy;
+    color : white;
+ }
+ #brochureBtn:hover{
+    background-color: black;
+    color : white;
+ }
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

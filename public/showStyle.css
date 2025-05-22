@@ -42,3 +42,13 @@ grid-gap : 19px 19px;
 .gridBox:hover{
    background-color: rgb(226, 220, 220);
 }
+
+#brochureBtn{
+   border-radius: 4px;
+   background-color: navy;
+   color : white;
+}
+#brochureBtn:hover{
+   background-color: black;
+   color : white;
+}

@@ -21,13 +21,13 @@
             <div class="notice-container">
                 <ul id="notice-list">
                     <li>Helpline</li>
-                    <li>Info. Brochure of all UTD's</li>
-                    <li>HOD of UTD's</li>
-                    <li>Admission Info. in BSc</li>
-                    <li>Admission Open in BTech</li>
-                    <li>Admission Open in MTech</li>
-                    <li>Admission Open in BSc</li>
-                    <li>Admisssion open in iet</li>
+                  <a href="/DetailedBrochure.pdf"><li>Information Brochure</li></a> 
+                 <a href="/contact/hod"> <li>HOD of UTD's</li></a>  
+                 <a href="/contact/admission"> <li>Admission Committe Members</li></a>  
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             </div>
         </div>
@@ -60,15 +60,26 @@
                     </select>
                 </div>
                 
-                <div id="courseSelection" style="display: none;">
+                <!-- <div id="courseSelection" style="display: none;">
                     <label for="course">Select your preferred courses:</label>
                     <select id="course" name="preferredCourse" multiple required>
                         <option value="">-- Select Course --</option>
                     </select>
+                </div> -->
+
+                 <div id="courseSelection" style="display: none;">
+                    <label for="course">Select your preferred Course(s):</label>
+                    <select id="course" name="preferredCourse" multiple required>
+                    </select>
+                    
+                    <div id="selectedCourses" class="selected-courses">
+                        <p>Selected Courses:</p>
+                        <ul></ul>
+                    </div>
                 </div>
 
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submitBtn">Submit</button>
             </form>
         </div>
     </div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Query</title>
+    <link rel="stylesheet" href="/displayStyle.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <img src="/davvLogo2.png" alt="University Logo" class="logo">
+            <h1>Devi Ahilya Vishwavidyalaya, Indore</h1>
+        </header>
+
+        <div class="course-details">
+
+            <div class="eligibility">
+                <strong>DEPARTMENT INFORMATION</strong> 
+            </div>
+
+            <table class="fee-structure">
+                <tr>
+                    <th>Department</th>
+                    <th>Head of the Department</th>
+                    <th>Email</th>
+                    <th>Contact Number</th>
+                </tr>
+                <% for(hod of allHod) {%>
+                <tr>
+                    <td> <strong><%= hod.college %></strong></td>
+                    <td><%= hod.name %> </td>
+                    <td><%= hod.email %></td>
+                    <td> +91<%= hod.phoneNumber %></td>
+                </tr>
+                <% } %>
+            </table>
+
+           
+        </div>
+    </div>
+</body>
+</html>

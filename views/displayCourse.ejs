@@ -28,8 +28,8 @@
             <table class="fee-structure">
                 <tr>
                     <th>Number of Seats</th>
-                    <th>Boy Fees</th>
-                    <th>Girl Fees</th>
+                    <th>Boy Fees (per annum)</th>
+                    <th>Girl Fees (per annum)</th>
                 </tr>
                 <tr>
                     <td><%= course.seats %></td>
@@ -41,7 +41,9 @@
             <div class="contact-info">
                 <p><strong>For more details:</strong></p>
                 <p>Email: <a href="mailto:<%= course.email %>"><%= course.email %></a></p>
-                <p>Phone Number: <%= course.phone %></p>
+                <p>Phone Number: +91<%= course.phone %></p>
+                <p>For more information click here to get detailed brochure : <a href="/DetailedBrochure.pdf"><button id="brochureBtn">get brochure</button></a> </p>
+   
             </div>
         </div>
     </div>

@@ -10,6 +10,12 @@ module.exports.renderRegisterPage =  (req,res) => {
 module.exports.register = async (req,res) => {
     try{
         let {name,email,phoneNumber,qualification,subject,preferredCourse} = req.body;
+        if(!name || !email || !phoneNumber || !qualification || !preferredCourse || !subject){
+          return res.status(400).json({
+            message : "Something is missing",
+            success : false
+        });
+      }
         const newUser = new User({name,email,phoneNumber,qualification,subject,preferredCourse});
         await newUser.save();
 
@@ -58,18 +64,19 @@ module.exports.register = async (req,res) => {
         subject : "Welcome to Devi Ahilya Vishwa Vidyalaya",
         html : mail
       }
-
+ let isSent = true;
      await transporter.sendMail(message).then(() => {
-       console.log("email sent");
+      console.log("email has been sent");
      }).catch((err)=> {
-       
+       isSent = false;
         console.log("invalid email")
         console.log(err);
         // next(new ExpressError(404,"Enter a valid Email"));
         })
         // end sending email
       let allCourses = await Course.find( { name : {$in : preferredCourse}});
-      return res.render("show.ejs",{allCourses});
+      
+      return res.render("show.ejs",{allCourses,isSent});
     }
    catch(err){
     console.log(err);
