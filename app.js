@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const mongoose = require('mongoose');
 const app = express();
-const port = 3006;
+const port = process.env.PORT;
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
@@ -24,9 +24,8 @@ main().then((res)=>{
 }).catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/davvportal');
+  await mongoose.connect(process.env.MONGO_LINK);
 }
-
 
 app.get("/",(req,res) => { 
   res.render("index.ejs");
@@ -34,7 +33,6 @@ app.get("/",(req,res) => {
 
 app.use("/user",userRouter);
 app.use("/contact",contactRouter);
-
 
 
 app.all( "*", (req,res,next) => {

@@ -11,4 +11,6 @@ router.get("/course/:id", userController.display);
 
 router.get("/email/:id",userController.emailDisplay);
 
+router.get("/course",userController.displayAllCourses);
+
 module.exports = router;

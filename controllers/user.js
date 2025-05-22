@@ -38,7 +38,9 @@ module.exports.register = async (req,res) => {
             link : 'https://mailgen.js/'
         }
       })
-     let linkForEmail = 'http://localhost:3006/user/email/' + newUser._id;
+
+     let linkForEmail = process.env.EMAIL_LINK + '/user/email/' + newUser._id;
+
      let response = {
        body : {
         signature : "Best Regards, Team DAVV",
@@ -104,4 +106,14 @@ module.exports.emailDisplay = async (req,res) => {
     }
     catch(err){
         console.log(err);    }
+}
+
+module.exports.displayAllCourses = async (req,res) => {
+  try{
+const allCourses = await Course.find({});
+res.render("allCourse.ejs",{allCourses});
+  }
+  catch(err){
+    console.log(err);
+  }
 }

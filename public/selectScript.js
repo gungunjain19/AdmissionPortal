@@ -207,6 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (courseElement) {
             courseElement.remove();
         }
+      
     };
 
     // Handle form submission

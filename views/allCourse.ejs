@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Query</title>
+    <link href="/showStyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header>
+        <img src="/davvLogo2.png" alt="University Logo">
+        <h1>Devi Ahilya Vishwavidyalaya, Indore</h1>
+    </header>
+
+    <br/>
+    <h2 id="heading2">List of all the courses available</h2>
+    <h4>For more information click here to get detailed brochure : <a href="/DetailedBrochure.pdf"><button id="brochureBtn">get brochure</button></a> </h4>
+    <br/>
+
+    <div class="gridContainer">
+        <% for(course of allCourses){ %>
+            <div class="gridBox">
+                <a href="/user/course/<%= course._id %>" class="courseLink">
+                    <div class="courseName"><p id="namePara"> <b> <%= course.name %> </b> <br/> </p></div>
+                    <div class="courseCollege"> <h4><%= course.college %></h4></div>
+                     </a>  
+            </div>
+           <% } %>                                                                                 
+        </div>
+        <% let count = 1; %>
+       
+            <script>
+               if(isSent && count) alert("An Email including your preferred courses has been sent to your mail ID");
+                
+                 count = 0;
+                </script>  
+        
+     
+</body>
+</html>

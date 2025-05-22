@@ -1,4 +1,4 @@
-// LISTING WILL INCLUDE : TITLE, DESCRIPTION, IMAGE, PRICE, LOCATION, COUNTRY
+
 
 const mongoose = require('mongoose');
 const schema = mongoose.Schema;
