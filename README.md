@@ -29,7 +29,7 @@ A clean, responsive design for optimal viewing across devices
 
 
 
-<h2>Tech Stack (suggested — edit as per your actual tools):</h2>
+<h2>Tech Stack :</h2>
 
 Frontend: HTML, CSS, JavaScript, EJS view pages
 
